@@ -1,2 +1,40 @@
 # rt-li-sumo-redirects
 Roland's fun redirects for support.mozilla.org on lithium
+## NPAPI redirect testing 23March2017 - strategic locales only
+
+* 0\. English
+    * https://support.mozilla.org/kb/npapi-plugins-en-US goes to:
+https://support-stage.allizom.org/t5/Problems-with-add-ons-plugins-or/Why-do-Java-Silverlight-Adobe-Acrobat-and-other-plugins-no/ta-p/31069 - PASS
+    * https://support-stage.allizom.org/kb/npapi-plugins-en-GB goes to:
+https://support-stage.allizom.org/t5/Problems-with-add-ons-plugins-or/Why-do-Java-Silverlight-Adobe-Acrobat-and-other-plugins-no/ta-p/31069 - PASS
+* 1\. German
+  * https://support-stage.allizom.org/kb/npapi-plugins-de goes to
+    https://support-stage.allizom.org/t5/Videos-Kl%C3%A4nge-Grafiken-und/Fehlerbehebung-bei-Plugins-wie-Flash-oder-Java-um-verbreitete/ta-p/14044 - PASS
+* 2\. French
+  * https://support-stage.allizom.org/kb/npapi-plugins-fr goes to
+    https://support-stage.allizom.org/t5/Manage-preferences-and-add-ons/Comment-d%C3%A9sactiver-les-applets-Java/ta-p/13734 - PASS
+* 3\. Chinese (simplified)
+  * https://support-stage.allizom.org/kb/npapi-plugins-zh-CN goes to https://support-stage.allizom.org/t5/Problems-with-add-ons-plugins-or/Why-do-Java-Silverlight-Adobe-Acrobat-and-other-plugins-no/ta-p/31069 - PASS
+* 4\. Hindu (India)
+  * https://support-stage.allizom.org/kb/npapi-plugins-hi-IN- goes to https://support-stage.allizom.org/t5/Problems-with-add-ons-plugins-or/Why-do-Java-Silverlight-Adobe-Acrobat-and-other-plugins-no/ta-p/31069 - PASS
+* 5\. Spanish
+  * https://support-stage.allizom.org/kb/npapi-plugins-es-ES goes to https://support-stage.allizom.org/t5/Administrar-preferencias-y/C%C3%B3mo-desactivar-los-applets-de-Java/ta-p/8081 - PASS
+    * https://support-stage.allizom.org/kb/npapi-plugins-es-AR goes to https://support-stage.allizom.org/t5/Administrar-preferencias-y/C%C3%B3mo-desactivar-los-applets-de-Java/ta-p/8081 - PASS
+   * https://support-stage.allizom.org/kb/npapi-plugins-es-CL goes to https://support-stage.allizom.org/t5/Administrar-preferencias-y/C%C3%B3mo-desactivar-los-applets-de-Java/ta-p/8081 - PASS
+   * https://support-stage.allizom.org/kb/npapi-plugins-es-MX goes to https://support-stage.allizom.org/t5/Administrar-preferencias-y/C%C3%B3mo-desactivar-los-applets-de-Java/ta-p/8081 - PASS
+* 6\. Russian
+  * https://support-stage.allizom.org/kb/npapi-plugins-ru goes to https://support-stage.allizom.org/t5/Mozilla-Support-Community/ct-p/Mozilla-EN - FAIL
+* 7\. Japan
+  * https://support-stage.allizom.org/kb/npapi-plugins-ja goes to https://support-stage.allizom.org/t5/Manage-preferences-and-add-ons/Java-%E337%E33%A9%E32%B0%E32%A4%E33%B3%E58%A9%E74%A8%E32%AC%E32%A4%E339/ta-p/9577 - FAIL should goto:
+  https://support-stage.allizom.org/t5/Manage-preferences-and-add-ons/Java-%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3%E5%88%A9%E7%94%A8%E3%82%AC%E3%82%A4%E3%83%89/ta-p/9577 (probably just a typo)
+  * https://support-stage.allizom.org/kb/npapi-plugins-ja-mac goes to
+* 8\. Italian
+  * https://support-stage.allizom.org/kb/npapi-plugins-it goes to 
+* 9\. Portuguese
+  * https://support-stage.allizom.org/kb/npapi-plugins-pt-BR goes to 
+  * https://support-stage.allizom.org/kb/npapi-plugins-pt-PT goes to 
+* 10\. Indonesian
+  * https://support-stage.allizom.org/kb/npapi-plugins-id goes to 
+* 11\. Polish
+  * https://support-stage.allizom.org/kb/npapi-plugins-pl goes to 
+
