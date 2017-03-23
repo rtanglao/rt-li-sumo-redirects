@@ -27,7 +27,7 @@ https://support-stage.allizom.org/t5/Problems-with-add-ons-plugins-or/Why-do-Jav
 * 7\. Japan
   * https://support-stage.allizom.org/kb/npapi-plugins-ja goes to https://support-stage.allizom.org/t5/Manage-preferences-and-add-ons/Java-%E337%E33%A9%E32%B0%E32%A4%E33%B3%E58%A9%E74%A8%E32%AC%E32%A4%E339/ta-p/9577 - FAIL! should goto:
   https://support-stage.allizom.org/t5/Manage-preferences-and-add-ons/Java-%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3%E5%88%A9%E7%94%A8%E3%82%AC%E3%82%A4%E3%83%89/ta-p/9577 (probably just a typo)
-  * https://support-stage.allizom.org/kb/npapi-plugins-ja-mac goes to
+  * https://support-stage.allizom.org/kb/npapi-plugins-ja-mac goes to https://support-stage.allizom.org/t5/Mozilla-Support-Community/ct-p/Mozilla-EN FAIL! - should go to https://support-stage.allizom.org/t5/Manage-preferences-and-add-ons/Java-%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3%E5%88%A9%E7%94%A8%E3%82%AC%E3%82%A4%E3%83%89/ta-p/9577
 * 8\. Italian
   * https://support-stage.allizom.org/kb/npapi-plugins-it goes to 
 * 9\. Portuguese
