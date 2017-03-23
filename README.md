@@ -1,6 +1,6 @@
 # rt-li-sumo-redirects
 Roland's fun redirects for support.mozilla.org on lithium
-## NPAPI redirect testing 23March2017 - 12 strategic locales only
+## PARTIAL NPAPI redirect testing 23March2017 - 12 strategic locales only
 
 * 0\. English
     * https://support.mozilla.org/kb/npapi-plugins-en-US goes to:
