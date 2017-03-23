@@ -31,8 +31,8 @@ https://support-stage.allizom.org/t5/Problems-with-add-ons-plugins-or/Why-do-Jav
 * 8\. Italian
   * https://support-stage.allizom.org/kb/npapi-plugins-it goes to https://support-stage.allizom.org/t5/Manage-preferences-and-add-ons/Informazioni-su-Java/ta-p/9445 - PASS!
 * 9\. Portuguese
-  * https://support-stage.allizom.org/kb/npapi-plugins-pt-BR goes to 
-  * https://support-stage.allizom.org/kb/npapi-plugins-pt-PT goes to 
+  * https://support-stage.allizom.org/kb/npapi-plugins-pt-BR goes to https://support-stage.allizom.org/t5/Conserte-os-problemas/Como-permitir-o-Java-em-sites-confi%C3%A1veis/ta-p/6989 - PASS!
+  * https://support-stage.allizom.org/kb/npapi-plugins-pt-PT goes to https://support-stage.allizom.org/t5/Conserte-os-problemas/Como-permitir-o-Java-em-sites-confi%C3%A1veis/ta-p/6989 - PASS!
 * 10\. Indonesian
   * https://support-stage.allizom.org/kb/npapi-plugins-id goes to 
 * 11\. Polish
