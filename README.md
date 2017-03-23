@@ -36,5 +36,5 @@ https://support-stage.allizom.org/t5/Problems-with-add-ons-plugins-or/Why-do-Jav
 * 10\. Indonesian
   * https://support-stage.allizom.org/kb/npapi-plugins-id goes to https://support-stage.allizom.org/t5/Problems-with-add-ons-plugins-or/Why-do-Java-Silverlight-Adobe-Acrobat-and-other-plugins-no/ta-p/31069
 * 11\. Polish
-  * https://support-stage.allizom.org/kb/npapi-plugins-pl goes to 
+  * https://support-stage.allizom.org/kb/npapi-plugins-pl goes to https://support-stage.allizom.org/t5/Manage-preferences-and-add-ons/U%C5%BCywanie-wtyczki-Java-do-wy%C5Bwietlania-interaktywnej-tre%C5Bci-na/ta-p/11713 - FAIL! should go to: https://support.mozilla.org/t5/Manage-preferences-and-add-ons/U%C5%BCywanie-wtyczki-Java-do-wy%C5%9Bwietlania-interaktywnej-tre%C5%9Bci-na/ta-p/11713
 
