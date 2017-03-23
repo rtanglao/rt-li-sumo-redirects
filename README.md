@@ -1,6 +1,6 @@
 # rt-li-sumo-redirects
 Roland's fun redirects for support.mozilla.org on lithium
-## NPAPI redirect testing 23March2017 - strategic locales only
+## NPAPI redirect testing 23March2017 - 12 strategic locales only
 
 * 0\. English
     * https://support.mozilla.org/kb/npapi-plugins-en-US goes to:
@@ -34,7 +34,7 @@ https://support-stage.allizom.org/t5/Problems-with-add-ons-plugins-or/Why-do-Jav
   * https://support-stage.allizom.org/kb/npapi-plugins-pt-BR goes to https://support-stage.allizom.org/t5/Conserte-os-problemas/Como-permitir-o-Java-em-sites-confi%C3%A1veis/ta-p/6989 - PASS!
   * https://support-stage.allizom.org/kb/npapi-plugins-pt-PT goes to https://support-stage.allizom.org/t5/Conserte-os-problemas/Como-permitir-o-Java-em-sites-confi%C3%A1veis/ta-p/6989 - PASS!
 * 10\. Indonesian
-  * https://support-stage.allizom.org/kb/npapi-plugins-id goes to 
+  * https://support-stage.allizom.org/kb/npapi-plugins-id goes to https://support-stage.allizom.org/t5/Problems-with-add-ons-plugins-or/Why-do-Java-Silverlight-Adobe-Acrobat-and-other-plugins-no/ta-p/31069
 * 11\. Polish
   * https://support-stage.allizom.org/kb/npapi-plugins-pl goes to 
 
