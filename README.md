@@ -1,5 +1,10 @@
 # rt-li-sumo-redirects
 Roland's fun redirects for support.mozilla.org on lithium
+
+## 27March2017 Redirect Testing
+* 1\. [What's new in Firefox for iOS 7.0 - PASS on stage](https://github.com/rtanglao/rt-li-sumo-redirects/blob/master/27march2017-firefox-ios-redirects-testing.md), thanks!
+* 2\. [Firefox Focus on Android- PASS on stage](https://github.com/rtanglao/rt-li-sumo-redirects/blob/master/27march2017-focus-for-android-redirects-testing.md), thanks!
+
 ## PARTIAL NPAPI redirect testing 23March2017 - 12 strategic locales only
 
 * 0\. English
