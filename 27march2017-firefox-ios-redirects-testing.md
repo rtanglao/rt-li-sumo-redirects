@@ -1,7 +1,31 @@
 # Based on response from Lithium see "Response fom Lithium 24March2017"
 ## What's new in Firefox for iOS 7.0 Article
-* 1\.https:///support-stage.allizom.org/kb/focus-android-en redirects to https://support-stage.allizom.org/t5/Mozilla-Support-Community/ct-p/Mozilla-EN - FAIL
-
+* 1\. https://support-stage.allizom.org/kb/fxios7 redirects to https://support.mozilla.org/t5/What-s-new-in-Firefox-for-iOS/What-s-new-in-Firefox-for-iOS-7-0/ta-p/1371741 - PASS
+  * https://support.mozilla.org/kb/fxios7 redirects to https://support.mozilla.org/t5/Mozilla-Support-English/ct-p/Mozilla-EN - FAIL
+* 2\. https://support-stage.allizom.org/kb/fxios7-de to https://support.mozilla.org/t5/What-s-new-in-Firefox-for-iOS/What-s-new-in-Firefox-for-iOS-7-0/ta-p/1371741 - PASS
+  * https://support.mozilla.org/kb/fxios7-de redirects to https://support.mozilla.org/t5/Mozilla-Support-English/ct-p/Mozilla-EN - FAIL
+* 2\. https://support-stage.allizom.org/kb/fxios7-fr to https://support.mozilla.org/t5/What-s-new-in-Firefox-for-iOS/What-s-new-in-Firefox-for-iOS-7-0/ta-p/1371741 - PASS 
+  * https://support.mozilla.org/kb/fxios7-fr redirects to https://support.mozilla.org/t5/Mozilla-Support-English/ct-p/Mozilla-EN - FAIL
+* 3\. https://support-stage.allizom.org/kb/fxios7-fr to https://support.mozilla.org/t5/What-s-new-in-Firefox-for-iOS/What-s-new-in-Firefox-for-iOS-7-0/ta-p/1371741 - PASS 
+  * https://support.mozilla.org/kb/fxios7-fr redirects to https://support.mozilla.org/t5/Mozilla-Support-English/ct-p/Mozilla-EN - FAIL
+* 4\. https://support-stage.allizom.org/kb/fxios7-fr to https://support.mozilla.org/t5/What-s-new-in-Firefox-for-iOS/What-s-new-in-Firefox-for-iOS-7-0/ta-p/1371741 - PASS 
+  * https://support.mozilla.org/kb/fxios7-fr redirects to https://support.mozilla.org/t5/Mozilla-Support-English/ct-p/Mozilla-EN - FAIL  
+* 5\. https://support-stage.allizom.org/kb/fxios7-fr to https://support.mozilla.org/t5/What-s-new-in-Firefox-for-iOS/What-s-new-in-Firefox-for-iOS-7-0/ta-p/1371741 - PASS 
+  * https://support.mozilla.org/kb/fxios7-fr redirects to https://support.mozilla.org/t5/Mozilla-Support-English/ct-p/Mozilla-EN - FAIL
+* 6\. https://support-stage.allizom.org/kb/fxios7-fr to https://support.mozilla.org/t5/What-s-new-in-Firefox-for-iOS/What-s-new-in-Firefox-for-iOS-7-0/ta-p/1371741 - PASS 
+  * https://support.mozilla.org/kb/fxios7-fr redirects to https://support.mozilla.org/t5/Mozilla-Support-English/ct-p/Mozilla-EN - FAIL  
+* 7\. https://support-stage.allizom.org/kb/fxios7-fr to https://support.mozilla.org/t5/What-s-new-in-Firefox-for-iOS/What-s-new-in-Firefox-for-iOS-7-0/ta-p/1371741 - PASS 
+  * https://support.mozilla.org/kb/fxios7-fr redirects to https://support.mozilla.org/t5/Mozilla-Support-English/ct-p/Mozilla-EN - FAIL
+* 8\. https://support-stage.allizom.org/kb/fxios7-fr to https://support.mozilla.org/t5/What-s-new-in-Firefox-for-iOS/What-s-new-in-Firefox-for-iOS-7-0/ta-p/1371741 - PASS 
+  * https://support.mozilla.org/kb/fxios7-fr redirects to https://support.mozilla.org/t5/Mozilla-Support-English/ct-p/Mozilla-EN - FAIL
+* 9\. https://support-stage.allizom.org/kb/fxios7-fr to https://support.mozilla.org/t5/What-s-new-in-Firefox-for-iOS/What-s-new-in-Firefox-for-iOS-7-0/ta-p/1371741 - PASS 
+  * https://support.mozilla.org/kb/fxios7-fr redirects to https://support.mozilla.org/t5/Mozilla-Support-English/ct-p/Mozilla-EN - FAIL
+* 10\. https://support-stage.allizom.org/kb/fxios7-fr to https://support.mozilla.org/t5/What-s-new-in-Firefox-for-iOS/What-s-new-in-Firefox-for-iOS-7-0/ta-p/1371741 - PASS 
+  * https://support.mozilla.org/kb/fxios7-fr redirects to https://support.mozilla.org/t5/Mozilla-Support-English/ct-p/Mozilla-EN - FAIL
+* 11\. https://support-stage.allizom.org/kb/fxios7-fr to https://support.mozilla.org/t5/What-s-new-in-Firefox-for-iOS/What-s-new-in-Firefox-for-iOS-7-0/ta-p/1371741 - PASS 
+  * https://support.mozilla.org/kb/fxios7-fr redirects to https://support.mozilla.org/t5/Mozilla-Support-English/ct-p/Mozilla-EN - FAIL
+* 12\. https://support-stage.allizom.org/kb/fxios7-fr to https://support.mozilla.org/t5/What-s-new-in-Firefox-for-iOS/What-s-new-in-Firefox-for-iOS-7-0/ta-p/1371741 - PASS 
+  * https://support.mozilla.org/kb/fxios7-fr redirects to https://support.mozilla.org/t5/Mozilla-Support-English/ct-p/Mozilla-EN - FAIL
 # Response fom Lithium 24March2017
 from: https://supportcases.lithium.com/5006100000AatyY
 
