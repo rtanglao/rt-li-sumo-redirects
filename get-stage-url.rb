@@ -4,6 +4,7 @@ require 'rubygems'
 
 require 'net/http'
 require 'parseconfig'
+require 'pp'
 
 uri = URI('https://support-stage.allizom.org/kb/npapi-plugins-en-GB')
 stage_config = ParseConfig.new('stage.conf').params
@@ -17,7 +18,10 @@ Net::HTTP.start(uri.host, uri.port,
   request.basic_auth userid, password
 
   response = http.request request # Net::HTTPResponse object
-
+  pp(response)
+  pp response.code
   puts response
   puts response.body
+  response.each_header { |h| pp(h, response[h]) }
+  pp response['location']
 end
