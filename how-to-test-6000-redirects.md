@@ -1,5 +1,7 @@
 # How to Test 60000 redirects
 From [Case 00137762](https://supportcases.lithium.com/5006100000AawTs)
+Note this is automatable I am 99% sure via ruby script. Here is a [proof of concept in Ruby](https://github.com/rtanglao/rt-li-sumo-redirects/blob/master/get-stage-url.rb).
+
 * 1\. For each of the approximately 6100 rows in the spreadsheet at: \
 https://docs.google.com/spreadsheets/d/1bqoCUqsCvdrGTXssavzdadTRF38l8JoIjuEJxqc2QiU/edit#gid=277128454
   * A\. Please test the redirection of the links in Column D to the Target URL in Column G as follows:
