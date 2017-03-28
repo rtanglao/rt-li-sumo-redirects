@@ -14,4 +14,4 @@ https://docs.google.com/spreadsheets/d/1bqoCUqsCvdrGTXssavzdadTRF38l8JoIjuEJxqc2
     ```https://support-stage.allizom.org/t5/Protect-your-privacy/Insecure-password-warning-in-Firefox/ta-p/27861``` \
     Let's call this ```URL 2```
     * iv) Load ```URL 1``` in Firefox
-    * v) If Firefox redirects to ```URL 2```, THEN the test PASS ELSE test FAIL
+    * v) If Firefox redirects to ```URL 2```, THEN test PASS ELSE test FAIL
