@@ -13,5 +13,5 @@ https://docs.google.com/spreadsheets/d/1bqoCUqsCvdrGTXssavzdadTRF38l8JoIjuEJxqc2
     replace ```support.mozilla``` with ```support-stage.allizom``` e.g. row 2 Column G ->  \
     ```https://support-stage.allizom.org/t5/Protect-your-privacy/Insecure-password-warning-in-Firefox/ta-p/27861``` \
     Let's call this ```URL 2```
-    * iv) Load ```URL 1``` in the browser
-    * v) Verify the browser redirects to ```URL 2```
+    * iv) Load ```URL 1``` in Firefox
+    * v) If Firefox redirects to ```URL 2```, THEN the test PASS ELSE test FAIL
