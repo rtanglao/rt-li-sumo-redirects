@@ -44,7 +44,7 @@ Ccsv.foreach(ARGV[0]) do |values|
       sleep(10)
       retry
     else
-      $stderr.printf("Curl:ConnectionFailedError exception, retrying FAILED\n")
+      $stderr.printf("Errno::ECONNRESETexception, retrying FAILED\n")
       raise e
     end
   end
