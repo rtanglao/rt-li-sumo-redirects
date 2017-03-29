@@ -28,7 +28,7 @@ Ccsv.foreach(ARGV[0]) do |values|
     request = Net::HTTP::Get.new from_uri.request_uri
     request.basic_auth userid, password
     response = http.request request # Net::HTTPResponse object
-    if pp response['location'] == touri
+    if response['location'] == touri
       printf("PASS,%d,%s,%s\n", response.code, fromuri, touri)
     else
       printf("FAIL,%d,%s,%s\n", response.code, fromuri, touri)
