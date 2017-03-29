@@ -10,9 +10,7 @@ https://docs.google.com/spreadsheets/d/1bqoCUqsCvdrGTXssavzdadTRF38l8JoIjuEJxqc2
     replace ```support.mozilla``` with ```support-stage.allizom```  e.g. row 2, Column D -> \
     ```https://support-stage.allizom.org/kb/insecure-password-warning-firefox-ach``` \
     Let's call this ```URL 1```
-    * ii) In the URL from Column G "Target URL" e.g. row 2 ```https://support.mozilla.org/t5/Protect-your-privacy/Insecure-password-warning-in-Firefox/ta-p/27861```\
-    replace ```support.mozilla``` with ```support-stage.allizom``` e.g. row 2 Column G ->  \
-    ```https://support-stage.allizom.org/t5/Protect-your-privacy/Insecure-password-warning-in-Firefox/ta-p/27861``` \
+    * ii) Take the URL from Column G "Target URL" e.g. row 2 ```https://support.mozilla.org/t5/Protect-your-privacy/Insecure-password-warning-in-Firefox/ta-p/27861```
     Let's call this ```URL 2```
     * iii) Load ```URL 1``` in Firefox
     * iv) If Firefox redirects to ```URL 2```, THEN test PASS ELSE test FAIL
