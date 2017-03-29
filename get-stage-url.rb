@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 require 'rubygems'
 # http://stackoverflow.com/questions/13822555/how-to-do-basic-authentication-over-https-in-ruby
+# see also: rest-client
 
 require 'net/http'
 require 'parseconfig'
