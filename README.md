@@ -1,6 +1,8 @@
 # rt-li-sumo-redirects
 Roland's fun redirects for support.mozilla.org on lithium
 
+## 29March2017 
+* 1\. ```./test6000-redirects.rb Localized\ Redirects\ -\ Desktop\ -\ Locale\ Redirects.csv > 29march2017-test-6000-redirects-results.txt &```
 ## 27March2017 Redirect Testing
 * 1\. [What's new in Firefox for iOS 7.0 - PASS on stage](https://github.com/rtanglao/rt-li-sumo-redirects/blob/master/27march2017-firefox-ios-redirects-testing.md), thanks!
 * 2\. [Firefox Focus on Android- FAIL - due to Mozilla giving bad spreadsheet to Lithium on stage](https://github.com/rtanglao/rt-li-sumo-redirects/blob/master/27march2017-focus-for-android-redirects-testing.md), aargh!
