@@ -22,6 +22,7 @@ see [NPAPI Lithium Support Case 00137108](https://supportcases.lithium.com/50061
 ./test-npapi-redirects.rb NPAPI\ SUMO\ Article\ -\ URLs.csv >30march2017-npapi-redirect-test.txt &
 ```
 
+* 2\. did the rest by hand at 1033p.m. and they PASSED (although there was inconsistency between support.mozilla.org and support-stage.allizom.org! full report https://github.com/rtanglao/rt-li-sumo-redirects/blob/master/1033pm-30march2017-npapi.md
 ### 30March2017 Desktop redirects
 *  1\. error message:
 ```
