@@ -21,6 +21,8 @@ Ccsv.foreach(ARGV[0]) do |values|
   fromuri = values[1].chomp.gsub("support.mozilla.org", "support-stage.allizom.org") # column B
   from_uri= URI(fromuri)
   $stderr.puts(values[5])
+  $stderr.puts(values[0])
+
   touri = values[5].chomp.gsub("support.mozilla.org", "support-stage.allizom.org") #column G
   to_uri = URI(touri)
   try_count = 0
