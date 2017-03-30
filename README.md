@@ -2,6 +2,10 @@
 Roland's fun redirects for support.mozilla.org on lithium
 
 ## 30March2017
+
+## 30March2017 Firefox Focus Android Overview Redirects
+* 1\. ```./test-firefox-focus-android-redirects.rb Focus\ for\ Android\ -\ Overview\ article.csv >30march2017-focus-android-overview-report.txt``` and they all PASS!!!!! YAY!!!!!!
+
 ### 30March2017 NPAPI redirects
 
 see [NPAPI Lithium Support Case 00137108](https://supportcases.lithium.com/5006100000A1zGe)
