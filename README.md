@@ -1,8 +1,29 @@
 # rt-li-sumo-redirects
 Roland's fun redirects for support.mozilla.org on lithium
 
-## 29March2017 
-* 1\. ```./test6000-redirects.rb Localized\ Redirects\ -\ Desktop\ -\ Locale\ Redirects.csv > 29march2017-test-6000-redirects-results.txt &```
+## 30March2017
+*  1\. error message:
+```
+Users/rtanglao/.rbenv/versions/2.3.0/lib/ruby/2.3.0/uri/rfc3986_parser.rb:21:in `split': \
+URI must be ascii only \
+"https://support.mozilla.org/t5/Procedures-to-diagnose-and-fix/Problemy-Firefox-diagnostic\xC4\x9Browa\xC4\x87-a-rozrisa\xC4\x87/ta-p/38687" (URI::InvalidURIError)
+	from /Users/rtanglao/.rbenv/versions/2.3.0/lib/ruby/2.3.0/uri/rfc3986_parser.rb:73:in `parse'
+	from /Users/rtanglao/.rbenv/versions/2.3.0/lib/ruby/2.3.0/uri/common.rb:227:in `parse'
+	from /Users/rtanglao/.rbenv/versions/2.3.0/lib/ruby/2.3.0/uri/common.rb:714:in `URI'
+	from ./test6000-redirects.rb:24:in `block in <main>'
+	from ./test6000-redirects.rb:16:in `foreach'
+	from ./test6000-redirects.rb:16:in `<main>'
+```
+* 2\. fixed by:
+  * going to the original Localized redirects file and loading ```https://support.mozilla.org/t5/Procedures-to-diagnose-and-fix/Problemy-Firefox-diagnosticěrować-a-rozrisać/ta-p/38687`` in Firefox
+  * Firefox converts to meaningful URL: ```https://support.mozilla.org/t5/Procedures-to-diagnose-and-fix/Problemy-Firefox-diagnostic%C4%9Browa%C4%87-a-rozrisa%C4%87/ta-p/38687```
+  * deleting the lines before 38687, fixing this url and creating a new file: ```1st-2368-deleted-Localized-redirects.txt``` 
+## 29March2017
+* 1\. ```./test6000-redirects.rb Localized\ Redirects\ -\ Desktop\ -\ Locale\ Redirects.csv > 29march2017-test-6000-redirects-results.txt 2> stderr-29march2017.txt &```
+  * errors due to
+    * quotation marks in urls fixed by deleting quotation marks
+    * ```ja linux``` - fixed by deleting ``` linux```
+    * ```ja-mac osx``` - fixed by deleting ``` osx```
 ## 27March2017 Redirect Testing
 * 1\. [What's new in Firefox for iOS 7.0 - PASS on stage](https://github.com/rtanglao/rt-li-sumo-redirects/blob/master/27march2017-firefox-ios-redirects-testing.md), thanks!
 * 2\. [Firefox Focus on Android- FAIL - due to Mozilla giving bad spreadsheet to Lithium on stage](https://github.com/rtanglao/rt-li-sumo-redirects/blob/master/27march2017-focus-for-android-redirects-testing.md), aargh!
