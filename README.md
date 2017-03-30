@@ -1,15 +1,24 @@
 # rt-li-sumo-redirects
 Roland's fun redirects for support.mozilla.org on lithium
 
+## 31 March 2017
+### 31 March 2017 - Desktop Redirects
+* 1\.run it on file with first 3820 removed
+```sh
+./test6000-redirects.rb 1st-3820-deleted-Localized-redirects.txt \
+2>stderr-31march2017-1st-3820-deleted-Localized-redirects.txt \
+>31march2017-1st-3820-deleted-Localized-redirects.txt &
+```
+
 ## 30March2017
-## 30March2017 Firefox for iOS What's new in 7.0 Redirects
+### 30March2017 Firefox for iOS What's new in 7.0 Redirects
 [Lithium Support Case 00137745](https://supportcases.lithium.com/5006100000AatyY)
 * 1\. ```./test-ffios7-whats-new-redirects.rb Firefox\ for\ iOS\ 7\ -\ What\'s\ New\ \ -\ Overview\ article.csv >30march2017-firefox-ios7-whatsnew--report.txt```
 
-## 30March2017 Firefox Focus Android Default Browser Redirects
+### 30March2017 Firefox Focus Android Default Browser Redirects
 [Lithium Support Case 00137745](https://supportcases.lithium.com/5006100000AatyY)
 * 1\. ```./test-firefox-focus-android-redirects.rb Focus\ for\ Android\ -\ Default\ browser\ article.csv >30march2017-focus-android-default-browser-report.txt``` and they all PASS!!! YAY!!!!!!
-## 30March2017 Firefox Focus Android Overview Redirects
+### 30March2017 Firefox Focus Android Overview Redirects
 [Lithium Support Case 00137745](https://supportcases.lithium.com/5006100000AatyY)
 * 1\. ```./test-firefox-focus-android-redirects.rb Focus\ for\ Android\ -\ Overview\ article.csv >30march2017-focus-android-overview-report.txt``` and they all PASS!!!!! YAY!!!!!!
 
@@ -59,6 +68,7 @@ https://support-stage.allizom.org/kb/Plugin crash reports-ach (URI::InvalidURIEr
 	from ./test6000-redirects.rb:16:in `foreach'
 	from ./test6000-redirects.rb:16:in `<main>'
 ```
+
 ## 29March2017
 * 1\. ```./test6000-redirects.rb Localized\ Redirects\ -\ Desktop\ -\ Locale\ Redirects.csv > 29march2017-test-6000-redirects-results.txt 2> stderr-29march2017.txt &```
   * errors due to
