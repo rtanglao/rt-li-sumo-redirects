@@ -48,7 +48,17 @@ URI must be ascii only \
 2>stderr-30march2017-1st-2368-deleted-Localized-redirects.txt \
 >30march2017-1st-2368-deleted-Localized-redirects.txt &
 ```
-
+* 4\. result after 1444 urls:
+```sh
+/Users/rtanglao/.rbenv/versions/2.3.0/lib/ruby/2.3.0/uri/rfc3986_parser.rb:67:in `split': bad URI(is not URI?):\
+https://support-stage.allizom.org/kb/Plugin crash reports-ach (URI::InvalidURIError)\
+	from /Users/rtanglao/.rbenv/versions/2.3.0/lib/ruby/2.3.0/uri/rfc3986_parser.rb:73:in `parse'
+	from /Users/rtanglao/.rbenv/versions/2.3.0/lib/ruby/2.3.0/uri/common.rb:227:in `parse'
+	from /Users/rtanglao/.rbenv/versions/2.3.0/lib/ruby/2.3.0/uri/common.rb:714:in `URI'
+	from ./test6000-redirects.rb:22:in `block in <main>'
+	from ./test6000-redirects.rb:16:in `foreach'
+	from ./test6000-redirects.rb:16:in `<main>'
+```
 ## 29March2017
 * 1\. ```./test6000-redirects.rb Localized\ Redirects\ -\ Desktop\ -\ Locale\ Redirects.csv > 29march2017-test-6000-redirects-results.txt 2> stderr-29march2017.txt &```
   * errors due to
