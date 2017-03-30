@@ -4,6 +4,8 @@ Roland's fun redirects for support.mozilla.org on lithium
 ## 30March2017
 ### 30March2017 NPAPI redirects
 
+see [NPAPI Lithium Support Case 00137108](https://supportcases.lithium.com/5006100000A1zGe)
+
 * 1\. test npapi
 ```sh
 ./test-npapi-redirects.rb NPAPI\ SUMO\ Article\ -\ URLs.csv >30march2017-npapi-redirect-test.txt &
