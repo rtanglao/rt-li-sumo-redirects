@@ -1,0 +1,9 @@
+Errno::ECONNRESET exception, retry:1
+Errno::ECONNRESET exception, retry:1
+/Users/rtanglao/.rbenv/versions/2.3.0/lib/ruby/2.3.0/uri/rfc3986_parser.rb:21:in `split': URI must be ascii only "https://support.mozilla.org/t5/Procedures-to-diagnose-and-fix/Problemy-Firefox-diagnostic\xC4\x9Browa\xC4\x87-a-rozrisa\xC4\x87/ta-p/38687" (URI::InvalidURIError)
+	from /Users/rtanglao/.rbenv/versions/2.3.0/lib/ruby/2.3.0/uri/rfc3986_parser.rb:73:in `parse'
+	from /Users/rtanglao/.rbenv/versions/2.3.0/lib/ruby/2.3.0/uri/common.rb:227:in `parse'
+	from /Users/rtanglao/.rbenv/versions/2.3.0/lib/ruby/2.3.0/uri/common.rb:714:in `URI'
+	from ./test6000-redirects.rb:24:in `block in <main>'
+	from ./test6000-redirects.rb:16:in `foreach'
+	from ./test6000-redirects.rb:16:in `<main>'
