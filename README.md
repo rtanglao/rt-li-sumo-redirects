@@ -3,7 +3,7 @@ Roland's fun redirects for support.mozilla.org on lithium
 
 ## 30March2017
 ## 30March2017 Firefox Focus Android Default Browser Redirects
-* 1\. ```./test-firefox-focus-android-redirects.rb Focus\ for\ Android\ -\ Default\ browser\ article.csv >30march2017-focus-android-default-browser-report.txt```
+* 1\. ```./test-firefox-focus-android-redirects.rb Focus\ for\ Android\ -\ Default\ browser\ article.csv >30march2017-focus-android-default-browser-report.txt``` and they all PASS!!! YAY!!!!!!
 ## 30March2017 Firefox Focus Android Overview Redirects
 * 1\. ```./test-firefox-focus-android-redirects.rb Focus\ for\ Android\ -\ Overview\ article.csv >30march2017-focus-android-overview-report.txt``` and they all PASS!!!!! YAY!!!!!!
 
