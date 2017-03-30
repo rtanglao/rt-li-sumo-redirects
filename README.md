@@ -4,6 +4,7 @@ Roland's fun redirects for support.mozilla.org on lithium
 ## 30March2017
 ## 30March2017 Firefox for iOS What's new in 7.0 Redirects
 [Lithium Support Case 00137745](https://supportcases.lithium.com/5006100000AatyY)
+* 1\. ```./test-firefox-focus-android-redirects.rb Firefox\ for\ iOS\ 7\ -\ What\'s\ New\ \ -\ Overview\ article.csv >30march2017-firefox-ios7-whatsnew--report.txt```
 
 ## 30March2017 Firefox Focus Android Default Browser Redirects
 [Lithium Support Case 00137745](https://supportcases.lithium.com/5006100000AatyY)
