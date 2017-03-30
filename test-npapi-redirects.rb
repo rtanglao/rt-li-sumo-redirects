@@ -34,9 +34,11 @@ Ccsv.foreach(ARGV[0]) do |values|
       response = http.request request # Net::HTTPResponse object
       response_uri = response['location']
       if  response_uri == touri
-        printf("PASS,%d,%s,%s\n", response.code, fromuri, touri)
+        printf("PASS,%d,%s,%s,EXPECTED:%s\n", response.code, fromuri,
+               touri, touri)
       else
-        printf("FAIL,%d,%s,%s\n", response.code, fromuri, response_uri)
+        printf("FAIL,%d,%s,%s,EXPECTED:%s\n", response.code, fromuri,
+               response_uri, touri)
       end
     end
   rescue Errno::ECONNRESET => e
