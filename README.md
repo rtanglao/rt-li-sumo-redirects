@@ -15,7 +15,9 @@ URI must be ascii only \
 	from ./test6000-redirects.rb:16:in `<main>'
 ```
 * 2\. fixed by:
-  * going to the original Localized redirects file and loading ```https://support.mozilla.org/t5/Procedures-to-diagnose-and-fix/Problemy-Firefox-diagnosticěrować-a-rozrisać/ta-p/38687`` in Firefox
+  * going to the original Localized redirects file and loading \
+  ```https://support.mozilla.org/t5/Procedures-to-diagnose-and-fix/Problemy-Firefox-diagnosticěrować-a-rozrisać/ta-p/38687``` \
+  in Firefox
   * Firefox converts to meaningful URL: ```https://support.mozilla.org/t5/Procedures-to-diagnose-and-fix/Problemy-Firefox-diagnostic%C4%9Browa%C4%87-a-rozrisa%C4%87/ta-p/38687```
   * deleting the lines before 38687, fixing this url and creating a new file: ```1st-2368-deleted-Localized-redirects.txt``` 
 * 3\.re-start test:
