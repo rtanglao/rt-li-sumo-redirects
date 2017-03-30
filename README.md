@@ -2,6 +2,14 @@
 Roland's fun redirects for support.mozilla.org on lithium
 
 ## 30March2017
+### 30March2017 NPAPI redirects
+
+* 1\. test npapi
+```sh
+./test-npapi-redirects.rb NPAPI\ SUMO\ Article\ -\ URLs.csv >30march2017-npapi-redirect-test.txt &
+```
+
+### 30March2017 Desktop redirects
 *  1\. error message:
 ```
 Users/rtanglao/.rbenv/versions/2.3.0/lib/ruby/2.3.0/uri/rfc3986_parser.rb:21:in `split': \
