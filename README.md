@@ -9,6 +9,11 @@ Roland's fun redirects for support.mozilla.org on lithium
 2>stderr-31march2017-1st-3820-deleted-Localized-redirects.txt \
 >31march2017-1st-3820-deleted-Localized-redirects.txt &
 ```
+* 2\. the result of 1. is that URLs with spaces have have the spaces changed to %20 but the same results\
+nameley:\
+i) unicode urls still break\
+ii) there are 1 line files with REDIRECT aka the "transactional redirects" which we hopefully\
+will get a fix for 
 
 ## 30March2017
 ### 30March2017 Firefox for iOS What's new in 7.0 Redirects
