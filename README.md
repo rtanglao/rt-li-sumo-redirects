@@ -13,6 +13,12 @@ head -2369 Localized\ Redirects\ -\ Desktop\ -\ Locale\ Redirects.csv \
 sed -n 2,1446p 1st-2368-deleted-Localized-redirects.txt \
 >> 03April2017-one-csv-file-to-rule-them-all.csv
 ```
+* 3\. we want all the lines in 1st-3820-deleted-Localized-redirects.txt
+```bash
+cat 1st-3820-deleted-Localized-redirects.txt \
+>> 03April2017-one-csv-file-to-rule-them-all.csv
+```
+
 ## 31 March 2017
 ### 31 March 2017 - Desktop Redirects
 * 1\.run it on file with first 3820 removed
