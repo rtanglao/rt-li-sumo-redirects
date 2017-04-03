@@ -14,6 +14,7 @@ password = stage_config['password']
                         
 header = true
 Ccsv.foreach(ARGV[0]) do |values|
+  sleep(10)if rand() > 0.5
   if header == true
     header = false
     next
