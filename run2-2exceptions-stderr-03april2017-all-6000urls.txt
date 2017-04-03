@@ -1,0 +1,15 @@
+Errno::ECONNRESET exception, retry:1
+Errno::ECONNRESET exception, retry:2
+Errno::ECONNRESET exception, retry:3
+Errno::ECONNRESETexception, retrying FAILED
+/Users/rtanglao/.rbenv/versions/2.3.0/lib/ruby/2.3.0/net/http.rb:882:in `rescue in block in connect': Failed to open TCP connection to :80 (Connection refused - connect(2) for nil port 80) (Errno::ECONNREFUSED)
+	from /Users/rtanglao/.rbenv/versions/2.3.0/lib/ruby/2.3.0/net/http.rb:879:in `block in connect'
+	from /Users/rtanglao/.rbenv/versions/2.3.0/lib/ruby/2.3.0/timeout.rb:91:in `block in timeout'
+	from /Users/rtanglao/.rbenv/versions/2.3.0/lib/ruby/2.3.0/timeout.rb:101:in `timeout'
+	from /Users/rtanglao/.rbenv/versions/2.3.0/lib/ruby/2.3.0/net/http.rb:878:in `connect'
+	from /Users/rtanglao/.rbenv/versions/2.3.0/lib/ruby/2.3.0/net/http.rb:863:in `do_start'
+	from /Users/rtanglao/.rbenv/versions/2.3.0/lib/ruby/2.3.0/net/http.rb:852:in `start'
+	from /Users/rtanglao/.rbenv/versions/2.3.0/lib/ruby/2.3.0/net/http.rb:584:in `start'
+	from ./test6000-redirects.rb:28:in `block in <main>'
+	from ./test6000-redirects.rb:16:in `foreach'
+	from ./test6000-redirects.rb:16:in `<main>'
