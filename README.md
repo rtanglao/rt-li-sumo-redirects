@@ -21,7 +21,7 @@ cat 1st-3820-deleted-Localized-redirects.txt \
 
 * 4\. Fix script to follow redirects and to check for stage not production URIs.
 
-* 5\. test all 6000 urls
+* 5\. test all 6000 urls (started this test run at approximately 2:50pm 03April2017 Berlin time)
 ```bash
 ./test6000-redirects.rb 03April2017-one-csv-file-to-rule-them-all.csv \
 2>stderr-03april2017-all-6000urls.txt \
