@@ -19,6 +19,12 @@ cat 1st-3820-deleted-Localized-redirects.txt \
 >> 03April2017-one-csv-file-to-rule-them-all.csv
 ```
 
+* 4\. test all 6000 urls
+```bash
+./test6000-redirects.rb 03April2017-one-csv-file-to-rule-them-all.csv \
+2>stderr-03april2017-all-6000urls.txt \
+>03april2017-all6000urls.txt &
+```
 ## 31 March 2017
 ### 31 March 2017 - Desktop Redirects
 * 1\.run it on file with first 3820 removed
