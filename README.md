@@ -1,6 +1,8 @@
 # rt-li-sumo-redirects
 Roland's fun redirects for support.mozilla.org on lithium
 
+## 03April2017
+### 03April2017 - 1 CSV to rule them all :-)
 * 1\. get all the urls that are valid in the original file
 ```bash
 head -2369 Localized\ Redirects\ -\ Desktop\ -\ Locale\ Redirects.csv \
@@ -11,10 +13,6 @@ head -2369 Localized\ Redirects\ -\ Desktop\ -\ Locale\ Redirects.csv \
 sed -n 2,1446p 1st-2368-deleted-Localized-redirects.txt \
 >> 03April2017-one-csv-file-to-rule-them-all.csv
 ```
-
-## 03April2017
-### 03April2017 - 1 CSV to rule them all :-)
-
 ## 31 March 2017
 ### 31 March 2017 - Desktop Redirects
 * 1\.run it on file with first 3820 removed
