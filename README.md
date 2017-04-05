@@ -1,6 +1,39 @@
 # rt-li-sumo-redirects
 Roland's fun redirects for support.mozilla.org on lithium
-
+## 05April2017
+### 05April2017 - redirect tests blocked by Lithium certificate bustage
+* 1\. added code to not verify certificates but then we get a net timeout
+* 2\. run 4 with net timeoout
+```bash
+./test6000-redirects.rb 03April2017-one-csv-file-to-rule-them-all.csv \
+2> run4-2exceptions-stderr-05april2017-all-6000urls.txt \
+> run4-2exceptions-stdout-05april2017-all-6000urls.txt
+```
+```bash
+cat run4-2exceptions-stderr-05april2017-all-6000urls.txt 
+./test6000-redirects.rb:16: warning: already initialized constant OpenSSL::SSL::VERIFY_PEER
+Net::ReadTimeout exception, message:Net::ReadTimeout, retry:1
+Net::ReadTimeout exception, message:Net::ReadTimeout, retry:2
+Net::ReadTimeout exception, message:Net::ReadTimeout, retry:3
+Net::ReadTimeout exception, message:Net::ReadTimeout, retry:4
+Net::ReadTimeout exception, message:Net::ReadTimeout, retry:5
+Net::ReadTimeout exception, message:Net::ReadTimeout, RETRY FAILED
+/Users/rtanglao/.rbenv/versions/2.3.0/lib/ruby/2.3.0/net/protocol.rb:158:in `rbuf_fill': Net::ReadTimeout (Net::ReadTimeout)
+	from /Users/rtanglao/.rbenv/versions/2.3.0/lib/ruby/2.3.0/net/protocol.rb:136:in `readuntil'
+	from /Users/rtanglao/.rbenv/versions/2.3.0/lib/ruby/2.3.0/net/protocol.rb:146:in `readline'
+	from /Users/rtanglao/.rbenv/versions/2.3.0/lib/ruby/2.3.0/net/http/response.rb:40:in `read_status_line'
+	from /Users/rtanglao/.rbenv/versions/2.3.0/lib/ruby/2.3.0/net/http/response.rb:29:in `read_new'
+	from /Users/rtanglao/.rbenv/versions/2.3.0/lib/ruby/2.3.0/net/http.rb:1437:in `block in transport_request'
+	from /Users/rtanglao/.rbenv/versions/2.3.0/lib/ruby/2.3.0/net/http.rb:1434:in `catch'
+	from /Users/rtanglao/.rbenv/versions/2.3.0/lib/ruby/2.3.0/net/http.rb:1434:in `transport_request'
+	from /Users/rtanglao/.rbenv/versions/2.3.0/lib/ruby/2.3.0/net/http.rb:1407:in `request'
+	from ./test6000-redirects.rb:38:in `block (2 levels) in <main>'
+	from /Users/rtanglao/.rbenv/versions/2.3.0/lib/ruby/2.3.0/net/http.rb:853:in `start'
+	from /Users/rtanglao/.rbenv/versions/2.3.0/lib/ruby/2.3.0/net/http.rb:584:in `start'
+	from ./test6000-redirects.rb:32:in `block in <main>'
+	from ./test6000-redirects.rb:19:in `foreach'
+	from ./test6000-redirects.rb:19:in `<main>'
+```
 ## 03April2017
 ### 03April2017 - 1 CSV to rule them all :-)
 * 1\. get all the urls that are valid in the original file
