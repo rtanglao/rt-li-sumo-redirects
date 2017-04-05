@@ -17,7 +17,7 @@ OpenSSL::SSL::VERIFY_PEER = OpenSSL::SSL::VERIFY_NONE
                         
 header = true
 Ccsv.foreach(ARGV[0]) do |values|
-  sleep(10) if rand() < 0.4
+  #sleep(10) if rand() < 0.4
   if header == true
     header = false
     next
