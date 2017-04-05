@@ -7,10 +7,13 @@ require 'net/http'
 require 'parseconfig'
 require 'pp'
 require 'ccsv'
+require 'openssl'
 
 stage_config = ParseConfig.new('stage.conf').params
 userid = stage_config['userid']
 password = stage_config['password']
+
+OpenSSL::SSL::VERIFY_PEER = OpenSSL::SSL::VERIFY_NONE
                         
 header = true
 Ccsv.foreach(ARGV[0]) do |values|
@@ -27,7 +30,9 @@ Ccsv.foreach(ARGV[0]) do |values|
   try_count = 0
   begin 
     Net::HTTP.start(from_uri.host, from_uri.port,
-                    :use_ssl => from_uri.scheme == 'https') do |http|
+                    :use_ssl => from_uri.scheme == 'https',
+                    :ssl_verify_mode => OpenSSL::SSL::VERIFY_NONE) do |http|
+      http.verify_mode = OpenSSL::SSL::VERIFY_NONE
       request = Net::HTTP::Get.new from_uri.request_uri
       request.basic_auth userid, password
       response = http.request request # Net::HTTPResponse object
@@ -63,15 +68,16 @@ Ccsv.foreach(ARGV[0]) do |values|
         printf("FAIL,%d,%s,%s\n", response.code, fromuri, response_uri)
       end
     end
-  rescue Errno::ECONNRESET, Errno::ECONNREFUSED => e
+  rescue Errno::ECONNRESET, Errno::ECONNREFUSED, Net::ReadTimeout => e
     try_count += 1
-    if try_count < 4
-      $stderr.printf("Errno::ECONNRESET exception, retry:%d\n",\
-                     try_count)
+    if try_count < 6
+      $stderr.printf("%s exception, message:%s, retry:%d\n",\
+                     e.class, e.message, try_count)
       sleep(10)
       retry
     else
-      $stderr.printf("Errno::ECONNRESETexception, retrying FAILED\n")
+      $stderr.printf("%s exception, message:%s, RETRY FAILED\n",\
+                     e.class, e.message)
       raise e
     end
   end
