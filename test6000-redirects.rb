@@ -24,7 +24,7 @@ Ccsv.foreach(ARGV[0]) do |values|
   end
   fromuri = values[3].gsub("support.mozilla.org", "support-stage.allizom.org") # column D
   from_uri= URI(fromuri)
-  touri = values[6] #column G
+  touri = values[6].gsub("support.mozilla.org", "support-stage.allizom.org") #column G
   touri = touri
   to_uri = URI(touri)
   try_count = 0
