@@ -26,9 +26,9 @@ Ccsv.foreach(ARGV[0]) do |values|
   touri = values[6].gsub("support.mozilla.org", "support-stage.allizom.org") #column G
   guid_str = touri[touri.rindex("/") + 1, touri.length - 1]
   anchor_pos =  guid_str.rindex("#")
-  unless anchor_pos.nil?
-    guid_str = guid_str[0, anchor_pos - 1]
-  end
+  #unless anchor_pos.nil?
+  #  guid_str = guid_str[0, anchor_pos - 1]
+  #end
   touri = "https://support-stage.allizom.org/t5/-/-/ta-p/" + guid_str
   to_uri = URI(touri)
   try_count = 0
