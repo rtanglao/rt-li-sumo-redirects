@@ -34,6 +34,12 @@ Net::ReadTimeout exception, message:Net::ReadTimeout, RETRY FAILED
 	from ./test6000-redirects.rb:19:in `foreach'
 	from ./test6000-redirects.rb:19:in `<main>'
 ```
+* 3\. Run 5: added another exception: ```Net::OpenTimeout```, fixed to use stage redirects
+```bash
+./test6000-redirects.rb 03April2017-one-csv-file-to-rule-them-all.csv \
+2>run5-2exceptions-stderr-05april2017-all-6000urls.txt \
+>run5-2exceptions-stdout-05april2017-all-6000urls.txt &
+```
 ## 03April2017
 ### 03April2017 - 1 CSV to rule them all :-)
 * 1\. get all the urls that are valid in the original file
