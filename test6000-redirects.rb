@@ -54,7 +54,13 @@ Ccsv.foreach(ARGV[0]) do |values|
         printf("FAIL,%d,%s,%s\n", response.code, fromuri, response_uri)
       end
     end
-  rescue Errno::ECONNRESET, Errno::ECONNREFUSED, Net::ReadTimeout, Net::OpenTimeout => e
+  rescue Errno::ECONNRESET, Errno::ECONNREFUSED, Net::ReadTimeout, Net::OpenTimeout,
+         # added SocketError based on:
+         # http://stackoverflow.com/questions/3946814/handling-nethttp-get-failures
+         # http://stackoverflow.com/questions/12358682/rails-post-socketerror-getaddrinfo-temporary-failure-in-name-resolution-on
+         # consider adding in the future:
+         # https://docs.ruby-lang.org/en/2.2.0/Resolv/DNS.html
+         SocketError => e
     try_count += 1
     if try_count < 6
       $stderr.printf("%s exception, message:%s, retry:%d\n",\
