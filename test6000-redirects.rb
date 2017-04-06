@@ -16,7 +16,9 @@ password = stage_config['password']
 OpenSSL::SSL::VERIFY_PEER = OpenSSL::SSL::VERIFY_NONE
                         
 header = true
+row_number = 0
 Ccsv.foreach(ARGV[0]) do |values|
+  row_number += 1
   if header == true
     header = false
     next
@@ -49,9 +51,11 @@ Ccsv.foreach(ARGV[0]) do |values|
         response_uri = ""
       end        
       if  response_uri == touri
-        printf("PASS,%d,%s,%s\n", response.code, fromuri, touri)
+        printf("PASS,row:%d,locale:%s,code:%d,GUID:%s,FROM:%s,EXPECTED:%s,TO:%s\n",\
+               row_number, values[2],response.code, guid_str,fromuri, touri,response_uri)
       else
-        printf("FAIL,%d,%s,%s\n", response.code, fromuri, response_uri)
+        printf("FAIL,row:%d,locale:%s,code:%d,GUID:%s,FROM:%s,EXPECTED:%s,TO:%s\n",\
+               row_number, values[2],response.code, guid_str,fromuri, touri,response_uri)
       end
     end
   rescue Errno::ECONNRESET, Errno::ECONNREFUSED, Net::ReadTimeout, Net::OpenTimeout,
