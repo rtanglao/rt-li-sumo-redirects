@@ -1,7 +1,7 @@
 # rt-li-sumo-redirects
 Roland's fun redirects for support.mozilla.org on lithium
 ## 06April2017
-### 06April2017 - better logging
+### 06April2017 - 6000 redirects - better logging
 * 1\. added code to log better! log row number, locale, expected uri i.e. the TO URI, actual URI, expected URI, guid
 ```bash
 ./test6000-redirects.rb 03April2017-one-csv-file-to-rule-them-all.csv \
