@@ -8,6 +8,25 @@ Roland's fun redirects for support.mozilla.org on lithium
 2>run6-2exceptions-stderr-06april2017-all-6000urls.txt \
 >run6-2exceptions-stdout-06april2017-all-6000urls.txt &
 ```
+* 2\. create FAIL file
+```bash
+grep FAIL run6-2exceptions-stdout-06april2017-all-6000urls.txt \
+>FAIL-run6-stdout-06april2017-all-6000urls.txt
+```
+* 3\.analysis
+  * 112 japanese failures - which i believe Lithium is fixing 
+```bash
+grep "locale:ja" FAIL-run6-stdout-06april2017-all-6000urls.txt | wc -l
+    128
+```
+   * 1112 non japanese failures
+```bash
+grep -v "locale:ja" FAIL-run6-stdout-06april2017-all-6000urls.txt | wc -l
+    1112
+grep -v "locale:ja" FAIL-run6-stdout-06april2017-all-6000urls.txt \
+> NON-ja-FAIL-run6-stdout-06april2017-all-6000urls.txt
+```
+  * 
 ## 05April2017
 ### 05April2017 - redirect tests blocked by Lithium certificate bustage
 * 1\. added code to not verify certificates but then we get a net timeout
