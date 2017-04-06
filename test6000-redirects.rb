@@ -54,7 +54,7 @@ Ccsv.foreach(ARGV[0]) do |values|
         printf("FAIL,%d,%s,%s\n", response.code, fromuri, response_uri)
       end
     end
-  rescue Errno::ECONNRESET, Errno::ECONNREFUSED, Net::ReadTimeout => e
+  rescue Errno::ECONNRESET, Errno::ECONNREFUSED, Net::ReadTimeout, Net::OpenTimeout => e
     try_count += 1
     if try_count < 6
       $stderr.printf("%s exception, message:%s, retry:%d\n",\
