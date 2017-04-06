@@ -1,5 +1,13 @@
 # rt-li-sumo-redirects
 Roland's fun redirects for support.mozilla.org on lithium
+## 06April2017
+### 06April2017 - better logging
+* 1\. added code to log better! log row number, locale, expected uri i.e. the TO URI, actual URI, expected URI, guid
+```bash
+./test6000-redirects.rb 03April2017-one-csv-file-to-rule-them-all.csv \
+2>run6-2exceptions-stderr-06april2017-all-6000urls.txt \
+>run6-2exceptions-stdout-06april2017-all-6000urls.txt &
+```
 ## 05April2017
 ### 05April2017 - redirect tests blocked by Lithium certificate bustage
 * 1\. added code to not verify certificates but then we get a net timeout
