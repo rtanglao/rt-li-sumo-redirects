@@ -51,10 +51,10 @@ Ccsv.foreach(ARGV[0]) do |values|
         response_uri = ""
       end        
       if  response_uri == touri
-        printf("PASS,row:%d,locale:%s,code:%d,GUID:%s,FROM:%s,EXPECTED:%s,TO:%s\n",\
+        printf("PASS,row:%d,locale:%s,code:%d,GUID:%s,FROM:%s,EXPECTED:%s,ACTUAL:%s\n",\
                row_number, values[2],response.code, guid_str,fromuri, touri,response_uri)
       else
-        printf("FAIL,row:%d,locale:%s,code:%d,GUID:%s,FROM:%s,EXPECTED:%s,TO:%s\n",\
+        printf("FAIL,row:%d,locale:%s,code:%d,GUID:%s,FROM:%s,EXPECTED:%s,ACTUAL:%s\n",\
                row_number, values[2],response.code, guid_str,fromuri, touri,response_uri)
       end
     end
