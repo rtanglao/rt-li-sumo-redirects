@@ -26,7 +26,17 @@ grep -v "locale:ja" FAIL-run6-stdout-06april2017-all-6000urls.txt | wc -l
 grep -v "locale:ja" FAIL-run6-stdout-06april2017-all-6000urls.txt \
 > NON-ja-FAIL-run6-stdout-06april2017-all-6000urls.txt
 ```
-  * 
+  * of the 1112 non japanese failures:
+    * 93 have non integer GUIDS which I believe is a result of errors in the spreadsheet i.e. SUMO needs to fix these these 93 rows of the CSV ```egrep "GUID:[^0-9]" NON-ja-FAIL-run6-stdout-06april2017-all-6000urls.txt \
+     > NON-integer-GUID-NON-ja-FAIL-run6-stdout-06april2017-all-6000urls.txt \
+     wc -l NON-integer-GUID-NON-ja-FAIL-run6-stdout-06april2017-all-6000urls.txt\ 93\
+     NON-integer-GUID-NON-ja-FAIL-run6-stdout-06april2017-all-6000urls.txt```
+   * 1019 have integer GUIDS
+```bash
+egrep -v "GUID:[^0-9]" NON-ja-FAIL-run6-stdout-06april2017-all-6000urls.txt > integer-GUID-NON-ja-FAIL-run6-stdout-06april2017-all-6000urls.txt
+wc -l integer-GUID-NON-ja-FAIL-run6-stdout-06april2017-all-6000urls.txt
+    1019 integer-GUID-NON-ja-FAIL-run6-stdout-06april2017-all-6000urls.txt
+```
 ## 05April2017
 ### 05April2017 - redirect tests blocked by Lithium certificate bustage
 * 1\. added code to not verify certificates but then we get a net timeout
