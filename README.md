@@ -13,28 +13,30 @@ Roland's fun redirects for support.mozilla.org on lithium
 grep FAIL run6-2exceptions-stdout-06april2017-all-6000urls.txt \
 >FAIL-run6-stdout-06april2017-all-6000urls.txt
 ```
-* 3\.analysis
+* 3\.analysis ja versus NON ja failures
   * 112 japanese failures - which i believe Lithium is fixing 
 ```bash
 grep "locale:ja" FAIL-run6-stdout-06april2017-all-6000urls.txt | wc -l
     128
 ```
-   * 1112 non japanese failures
+   * 1112 non japanese failures \
+   ```grep -v "locale:ja" FAIL-run6-stdout-06april2017-all-6000urls.txt | wc -l\
+   1112\
+   grep -v "locale:ja" FAIL-run6-stdout-06april2017-all-6000urls.txt \
+   > NON-ja-FAIL-run6-stdout-06april2017-all-6000urls.txt```
+* 4\. analysis of 1112 NON ja faiures
+* 4\a. 93 have non integer GUIDS which I believe is a result of errors in the spreadsheet i.e. SUMO needs to fix these these 93 rows of the CSV 
 ```bash
-grep -v "locale:ja" FAIL-run6-stdout-06april2017-all-6000urls.txt | wc -l
-    1112
-grep -v "locale:ja" FAIL-run6-stdout-06april2017-all-6000urls.txt \
-> NON-ja-FAIL-run6-stdout-06april2017-all-6000urls.txt
+egrep "GUID:[^0-9]" NON-ja-FAIL-run6-stdout-06april2017-all-6000urls.txt \
+> NON-integer-GUID-NON-ja-FAIL-run6-stdout-06april2017-all-6000urls.txt \
+wc -l NON-integer-GUID-NON-ja-FAIL-run6-stdout-06april2017-all-6000urls.txt\ 
+93 NON-integer-GUID-NON-ja-FAIL-run6-stdout-06april2017-all-6000urls.txt
 ```
-  * of the 1112 non japanese failures:
-    * 93 have non integer GUIDS which I believe is a result of errors in the spreadsheet i.e. SUMO needs to fix these these 93 rows of the CSV ```egrep "GUID:[^0-9]" NON-ja-FAIL-run6-stdout-06april2017-all-6000urls.txt \
-     > NON-integer-GUID-NON-ja-FAIL-run6-stdout-06april2017-all-6000urls.txt \
-     wc -l NON-integer-GUID-NON-ja-FAIL-run6-stdout-06april2017-all-6000urls.txt\ 93\
-     NON-integer-GUID-NON-ja-FAIL-run6-stdout-06april2017-all-6000urls.txt```
-   * 1019 have integer GUIDS
+* 4\b. 1019 have integer GUIDS 
 ```bash
-egrep -v "GUID:[^0-9]" NON-ja-FAIL-run6-stdout-06april2017-all-6000urls.txt > integer-GUID-NON-ja-FAIL-run6-stdout-06april2017-all-6000urls.txt
-wc -l integer-GUID-NON-ja-FAIL-run6-stdout-06april2017-all-6000urls.txt
+egrep -v "GUID:[^0-9]" NON-ja-FAIL-run6-stdout-06april2017-all-6000urls.txt \
+> integer-GUID-NON-ja-FAIL-run6-stdout-06april2017-all-6000urls.txt\
+wc -l integer-GUID-NON-ja-FAIL-run6-stdout-06april2017-all-6000urls.txt\
     1019 integer-GUID-NON-ja-FAIL-run6-stdout-06april2017-all-6000urls.txt
 ```
 ## 05April2017
