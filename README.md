@@ -18,6 +18,8 @@ grep FAIL run6-2exceptions-stdout-06april2017-all-6000urls.txt \
 ```bash
 grep "locale:ja" FAIL-run6-stdout-06april2017-all-6000urls.txt | wc -l
     128
+grep "locale:ja" FAIL-run6-stdout-06april2017-all-6000urls.txt \
+> FAIL-ja-run6-stdout-06april2017-all-6000urls.txt
 ```
 * 3b\. 1112 non japanese failures
 ```bash
