@@ -41,6 +41,27 @@ egrep -v "GUID:[^0-9]" NON-ja-FAIL-run6-stdout-06april2017-all-6000urls.txt \
 wc -l integer-GUID-NON-ja-FAIL-run6-stdout-06april2017-all-6000urls.txt\
     1019 integer-GUID-NON-ja-FAIL-run6-stdout-06april2017-all-6000urls.txt
 ```
+* 4b.i) of the 1019, 1016 has %20 in the URLs (which I believe may be a SUMO input error! not sure)
+```bash
+fgrep "%20" integer-GUID-NON-ja-FAIL-run6-stdout-06april2017-all-6000urls.txt  | wc -l
+    1016
+```
+* 4b.ii) of the 1019, THREE don't have %20 in the URLs and look to be  redirecting to the wrong GUID, perhaps this is a Lithium bug??!?
+```bash
+fgrep -v "%20" integer-GUID-NON-ja-FAIL-run6-stdout-06april2017-all-6000urls.txt  
+1. FAIL,row:1164,locale:id,code:301,GUID:27861,\
+FROM:https://support-stage.allizom.org/kb/insecure-password-warning-firefox-id,\
+EXPECTED:https://support-stage.allizom.org/t5/-/-/ta-p/27861,\
+ACTUAL:https://support-stage.allizom.org/t5/-/-/ta-p/28758
+2. FAIL,row:1196,locale:sl,code:301,GUID:27861,\
+FROM:https://support-stage.allizom.org/kb/insecure-password-warning-firefox-sl,\
+EXPECTED:https://support-stage.allizom.org/t5/-/-/ta-p/27861,\
+ACTUAL:https://support-stage.allizom.org/t5/-/-/ta-p/36865
+3. FAIL,row:1209,locale:zh-CN,code:301,GUID:36756,\
+FROM:https://support-stage.allizom.org/kb/insecure-password-warning-firefox-zh-CN,\
+EXPECTED:https://support-stage.allizom.org/t5/-/-/ta-p/36756,\
+ACTUAL:https://support-stage.allizom.org/t5/-/-/ta-p/27861
+```
 ## 05April2017
 ### 05April2017 - redirect tests blocked by Lithium certificate bustage
 * 1\. added code to not verify certificates but then we get a net timeout
