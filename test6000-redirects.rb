@@ -17,7 +17,6 @@ OpenSSL::SSL::VERIFY_PEER = OpenSSL::SSL::VERIFY_NONE
                         
 header = true
 Ccsv.foreach(ARGV[0]) do |values|
-  #sleep(10) if rand() < 0.4
   if header == true
     header = false
     next
@@ -25,7 +24,8 @@ Ccsv.foreach(ARGV[0]) do |values|
   fromuri = values[3].gsub("support.mozilla.org", "support-stage.allizom.org") # column D
   from_uri= URI(fromuri)
   touri = values[6].gsub("support.mozilla.org", "support-stage.allizom.org") #column G
-  touri = touri
+  guid_str = touri[touri.rindex("/") + 1, touri.length - 1]
+  touri = "https://support-stage.allizom.org/t5/-/-/ta-p/" + guid_str
   to_uri = URI(touri)
   try_count = 0
   begin 
@@ -36,31 +36,13 @@ Ccsv.foreach(ARGV[0]) do |values|
       request = Net::HTTP::Get.new from_uri.request_uri
       request.basic_auth userid, password
       response = http.request request # Net::HTTPResponse object
-      #pp response
-      #pp response.header
-      #pp response['location']
-      #pp response.code
       if response.code == "301"
-        #puts("in first 301")
-        from_uri = URI.parse(response['location'])
-        Net::HTTP.start(from_uri.host, from_uri.port,
-                    :use_ssl => from_uri.scheme == 'https') do |http|
-          request = Net::HTTP::Get.new from_uri.request_uri
-          request.basic_auth userid, password
-          response = http.request request # Net::HTTPResponse object
-          #pp response
-          #pp response.header
-          #pp response['location']
-        end
-        if response.code == "301"
-          #puts("in 2nd 301")
-          #pp from_uri
-          #pp response['location']
-          response_uri = "https://support.mozilla.org" + response['location']
-          #pp response_uri
-        else
-          #puts("Did NOT get 2nd 301")
-        end
+        $stderr.puts("in first 301")
+        $stderr.puts response['location']
+        $stderr.puts touri
+        response_uri = response['location']
+      else
+        response_uri = ""
       end        
       if  response_uri == touri
         printf("PASS,%d,%s,%s\n", response.code, fromuri, touri)
