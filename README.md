@@ -14,6 +14,20 @@ https://support.mozilla.org/t5/-/-/ta-p/1381503,\
 EXPECTED:\
 https://support.mozilla.org/t5/Firefox-Focus-for-Android/Set-Firefox-Focus-as-default-browser-on-Android/ta-p/1381503
 ```
+* 3\. kludge test for overview browser article - needs to be changed for guids
+```bash
+./production-test-firefox-focus-android-redirects.rb \
+Focus\ for\ Android\ -\ Overview\ article.csv \
+> 07april2017-focus-overview-redirects.txt
+```
+* 4\. they all PASS ! don't be deceived by lines like (no time to update the ruby script to handle GUID redirection):
+```csv
+FAIL,301,\
+https://support.mozilla.org/kb/focus-android-en,\
+https://support.mozilla.org/t5/-/-/ta-p/1381437,\
+EXPECTED:\
+https://support.mozilla.org/t5/Get-Started/What-is-Firefox-Focus-for-Android/ta-p/1381437
+```
 ## 07April2017 - what's new in Firefox for iOS 7 redirect
 * 1\.all pass on staging for ios!
 ```bash
