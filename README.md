@@ -1,6 +1,19 @@
 # rt-li-sumo-redirects
 Roland's fun redirects for support.mozilla.org on lithium
 ## 07April2017
+## 07April2017 - Focus Android redirects
+* 1\. kludge test for default browser article - needs to be changed for guids
+```bash
+./production-test-firefox-focus-android-redirects.rb Focus\ for\ Android\ -\ Default\ browser\ article.csv  \
+> 07april2017-focus-redirects-test-report.txt
+```
+* 2\. they all PASS ! don't be deceived by lines like (no time to update the ruby script to handle GUID redirection):
+```csv
+FAIL,301,https://support.mozilla.org/kb/focus-default-android-en,\
+https://support.mozilla.org/t5/-/-/ta-p/1381503,\
+EXPECTED:\
+https://support.mozilla.org/t5/Firefox-Focus-for-Android/Set-Firefox-Focus-as-default-browser-on-Android/ta-p/1381503
+```
 ## 07April2017 - what's new in Firefox for iOS 7 redirect
 * 1\.all pass on staging for ios!
 ```bash
