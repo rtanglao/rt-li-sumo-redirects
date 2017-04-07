@@ -1,0 +1,12 @@
+FAIL,301,https://support.mozilla.org/kb/focus-android-en,https://support.mozilla.org/t5/-/-/ta-p/1381437,EXPECTED:https://support.mozilla.org/t5/Get-Started/What-is-Firefox-Focus-for-Android/ta-p/1381437
+FAIL,301,https://support.mozilla.org/kb/klar-android-de,https://support.mozilla.org/t5/-/-/ta-p/1381437,EXPECTED:https://support.mozilla.org/t5/Get-Started/What-is-Firefox-Focus-for-Android/ta-p/1381437
+FAIL,301,https://support.mozilla.org/kb/focus-android-fr,https://support.mozilla.org/t5/-/-/ta-p/1381437,EXPECTED:https://support.mozilla.org/t5/Get-Started/What-is-Firefox-Focus-for-Android/ta-p/1381437
+FAIL,301,https://support.mozilla.org/kb/focus-android-cn,https://support.mozilla.org/t5/-/-/ta-p/1381437,EXPECTED:https://support.mozilla.org/t5/Get-Started/What-is-Firefox-Focus-for-Android/ta-p/1381437
+FAIL,301,https://support.mozilla.org/kb/focus-android-hi-IN,https://support.mozilla.org/t5/-/-/ta-p/1381437,EXPECTED:https://support.mozilla.org/t5/Get-Started/What-is-Firefox-Focus-for-Android/ta-p/1381437
+FAIL,301,https://support.mozilla.org/kb/focus-android-es,https://support.mozilla.org/t5/-/-/ta-p/1381437,EXPECTED:https://support.mozilla.org/t5/Get-Started/What-is-Firefox-Focus-for-Android/ta-p/1381437
+FAIL,301,https://support.mozilla.org/kb/focus-android-ru,https://support.mozilla.org/t5/-/-/ta-p/1381437,EXPECTED:https://support.mozilla.org/t5/Get-Started/What-is-Firefox-Focus-for-Android/ta-p/1381437
+FAIL,301,https://support.mozilla.org/kb/focus-android-jp,https://support.mozilla.org/t5/-/-/ta-p/1381437,EXPECTED:https://support.mozilla.org/t5/Get-Started/What-is-Firefox-Focus-for-Android/ta-p/1381437
+FAIL,301,https://support.mozilla.org/kb/focus-android-it,https://support.mozilla.org/t5/-/-/ta-p/1381437,EXPECTED:https://support.mozilla.org/t5/Get-Started/What-is-Firefox-Focus-for-Android/ta-p/1381437
+FAIL,301,https://support.mozilla.org/kb/focus-android-pt,https://support.mozilla.org/t5/-/-/ta-p/1381437,EXPECTED:https://support.mozilla.org/t5/Get-Started/What-is-Firefox-Focus-for-Android/ta-p/1381437
+FAIL,301,https://support.mozilla.org/kb/focus-android-id,https://support.mozilla.org/t5/-/-/ta-p/1381437,EXPECTED:https://support.mozilla.org/t5/Get-Started/What-is-Firefox-Focus-for-Android/ta-p/1381437
+FAIL,301,https://support.mozilla.org/kb/focus-android-pl,https://support.mozilla.org/t5/-/-/ta-p/1381437,EXPECTED:https://support.mozilla.org/t5/Get-Started/What-is-Firefox-Focus-for-Android/ta-p/1381437
