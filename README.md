@@ -11,7 +11,9 @@ Firefox\ for\ iOS\ 7\ -\ What\'s\ New\ \ -\ Overview\ article.csv \
 Full report [07april2017-firefox-ios7-whatsnew--report.txt](https://github.com/rtanglao/rt-li-sumo-redirects/blob/master/07april2017-firefox-ios7-whatsnew--report.txt)
 * 2\. All pass on production for ios
 ```bash
-./production-test-ffios7-whats-new-redirects.rb Firefox\ for\ iOS\ 7\ -\ What\'s\ New\ \ -\ Overview\ article.csv >07april2017-production-firefox-ios7-whatsnew--report.txt
+./production-test-ffios7-whats-new-redirects.rb \
+Firefox\ for\ iOS\ 7\ -\ What\'s\ New\ \ -\ Overview\ article.csv \
+>07april2017-production-firefox-ios7-whatsnew--report.txt
 ```
 ## 06April2017
 ### 06April2017 - production testing
