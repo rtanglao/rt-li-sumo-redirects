@@ -1,5 +1,14 @@
 # rt-li-sumo-redirects
 Roland's fun redirects for support.mozilla.org on lithium
+## 07April2017
+## 07April2017 - what's new in Firefox for iOS 7 redirect
+* 1\.all pass!
+```bash
+./test-ffios7-whats-new-redirects.rb \
+Firefox\ for\ iOS\ 7\ -\ What\'s\ New\ \ -\ Overview\ article.csv \
+>07april2017-firefox-ios7-whatsnew--report.txt
+```
+Full report [07april2017-firefox-ios7-whatsnew--report.txt](https://github.com/rtanglao/rt-li-sumo-redirects/blob/master/07april2017-firefox-ios7-whatsnew--report.txt)
 ## 06April2017
 ### 06April2017 - production testing
 * 1\. new script
