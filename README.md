@@ -1,7 +1,15 @@
 # rt-li-sumo-redirects
 Roland's fun redirects for support.mozilla.org on lithium
+## 08April2017
+### 08April2017 - test last 797 redirects
+* 1\. test id mismatches
+```bash
+./production-test-797-redirects.rb Link\ Errors\ -\ ID\ Mismatches\ only.csv \
+2> 08april2017-stderr-test-id-mismatches.txt \
+> 08april2017-stdout-test-id-mismatches.md &
+```
 ## 07April2017
-## 07April2017 - Focus Android redirects
+### 07April2017 - Focus Android redirects
 * 1\. kludge test for default browser article - needs to be changed for guids
 ```bash
 ./production-test-firefox-focus-android-redirects.rb Focus\ for\ Android\ -\ Default\ browser\ article.csv  \
@@ -28,7 +36,7 @@ https://support.mozilla.org/t5/-/-/ta-p/1381437,\
 EXPECTED:\
 https://support.mozilla.org/t5/Get-Started/What-is-Firefox-Focus-for-Android/ta-p/1381437
 ```
-## 07April2017 - what's new in Firefox for iOS 7 redirect
+### 07April2017 - what's new in Firefox for iOS 7 redirect
 * 1\.all pass on staging for ios!
 ```bash
 ./test-ffios7-whats-new-redirects.rb \
