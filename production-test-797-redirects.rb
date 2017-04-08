@@ -43,7 +43,8 @@ Ccsv.foreach(ARGV[0]) do |columns|
           response = http.request request # Net::HTTPResponse object
           response_uri = response['location']
           $stderr.printf("2nd response uri:%s\n", response['location'])
-          response_uri = "https://support.mozilla.org" + response_uri
+          response_uri = "" if response_uri.nil?
+          response_uri = "https://support.mozilla.org" + response_uri 
         end
       end        
       if  response_uri == touri
