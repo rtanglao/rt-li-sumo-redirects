@@ -47,14 +47,15 @@ Ccsv.foreach(ARGV[0]) do |columns|
         end
       end        
       if  response_uri == touri
-        printf("* PASS,row:%d,code:%d,FROM:%s,EXPECTED:%s,ACTUAL:%s\n",\
-               row_number,response.code,fromuri, touri,response_uri)
+        printf("* PASS,row:%d,code:%d,FROM:[%s](%s),EXPECTED:[%s](%s),ACTUAL:[%s](%s)\n",\
+               row_number,response.code,fromuri,fromuri,touri,touri,response_uri,response_uri)
       else
         actual_guid_str = response_uri[response_uri.rindex("/") + 1,
                                 response_uri.length - 1]
         printf(
-          "* **FAIL**,row:%d,code:%d,FROM:%s,EXPECTED:%s,ACTUAL:**%s**,EXPECTEDid:%s, ACTUALid:**%s**\n",\
-          row_number,response.code,fromuri, touri,response_uri, guid_str, actual_guid_str)
+          "* **FAIL**,row:%d,code:%d,FROM:[%s](%s),EXPECTED:[%s](%s),ACTUAL:**[%s](%s)**,EXPECTEDid:%s, ACTUALid:**%s**\n",\
+          row_number,response.code,fromuri,fromuri,touri,touri,response_uri,response_uri,
+          guid_str, actual_guid_str)
       end
     end
     rescue Errno::ECONNRESET, Errno::ECONNREFUSED,
