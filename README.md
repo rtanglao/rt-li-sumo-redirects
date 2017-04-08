@@ -8,6 +8,12 @@ Roland's fun redirects for support.mozilla.org on lithium
 2> 08april2017-stderr-hash-issues.txt \
 > 08april2017-stdout-hash-issues.md  &
 ```
+* 2\. test id mismatches
+```bash
+./production-test-797-redirects.rb Link\ Errors\ -\ ID\ Mismatches\ only.csv \
+2> 08april2017-stderr-test-id-mismatches.txt  \
+>08april2017-stdout-test-id-mismatches.md &
+```
 ## 07April2017
 ### 07April2017 - Focus Android redirects
 * 1\. kludge test for default browser article - needs to be changed for guids
