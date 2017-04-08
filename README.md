@@ -8,6 +8,11 @@ Roland's fun redirects for support.mozilla.org on lithium
 2> 08april2017-stderr-hash-issues.txt \
 > 08april2017-stdout-hash-issues.md  &
 ```
+* 1a. possible bug in ROW 8, i.e. first bullet point of [FAIL-08april2017-stdout-hash-issues.md](https://github.com/rtanglao/rt-li-sumo-redirects/blob/master/FAIL-08april2017-stdout-hash-issues.md)
+```https://support.mozilla.org/t5/Fix-slowness-crashing-error/How-to-troubleshoot-the-error-code-quot-SEC-ERROR-UNKNOWN-ISSUER/ta-p/35844``` has the wrong GUID! It should be ```35758``` NOT ```35844```
+i.e. the URL should be:
+```https://support.mozilla.org/t5/Fix-slowness-crashing-error/How-to-troubleshoot-the-error-code-quot-SEC-ERROR-UNKNOWN-ISSUER/ta-p/35758```
+
 * 2\. test id mismatches
 ```bash
 ./production-test-797-redirects.rb Link\ Errors\ -\ ID\ Mismatches\ only.csv \
