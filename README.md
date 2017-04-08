@@ -2,7 +2,7 @@
 Roland's fun redirects for support.mozilla.org on lithium
 ## 08April2017
 ### 08April2017 - test last 797 redirects
-* 1\. test id mismatches
+* 1\. test id mismatches - result: [all 98 japanese URLs PASS](https://github.com/rtanglao/rt-li-sumo-redirects/blob/master/PASS-08april2017-stdout-test-id-mismatches.md), [all 230 non japanese fail](https://github.com/rtanglao/rt-li-sumo-redirects/blob/master/FAIL-08april2017-stdout-test-id-mismatches.md)
 ```bash
 ./production-test-797-redirects.rb Link\ Errors\ -\ ID\ Mismatches\ only.csv \
 2> 08april2017-stderr-test-id-mismatches.txt \
