@@ -47,13 +47,13 @@ Ccsv.foreach(ARGV[0]) do |columns|
         end
       end        
       if  response_uri == touri
-        printf("PASS,row:%d,code:%d,FROM:%s,EXPECTED:%s,ACTUAL:%s\n",\
+        printf("* PASS,row:%d,code:%d,FROM:%s,EXPECTED:%s,ACTUAL:%s\n",\
                row_number,response.code,fromuri, touri,response_uri)
       else
         actual_guid_str = response_uri[response_uri.rindex("/") + 1,
                                 response_uri.length - 1]
         printf(
-          "**FAIL**,row:%d,code:%d,FROM:%s,EXPECTED:%s,ACTUAL:**%s**,EXPECTEDid:%s, ACTUALid:**%s**\n",\
+          "* **FAIL**,row:%d,code:%d,FROM:%s,EXPECTED:%s,ACTUAL:**%s**,EXPECTEDid:%s, ACTUALid:**%s**\n",\
           row_number,response.code,fromuri, touri,response_uri, guid_str, actual_guid_str)
       end
     end
