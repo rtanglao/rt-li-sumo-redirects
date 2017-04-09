@@ -34,3 +34,8 @@ pp tkb_page.css('div.tkb-other-language-link:nth-child(1) > a:nth-child(1)').chi
 puts "2"
 pp tkb_page.css('div.tkb-other-language-link:nth-child(2) > a:nth-child(1)/@href').first.value
 
+puts "count"
+
+tkb_page.css('div.tkb-other-language-link').each do |l|
+   pp l
+end
