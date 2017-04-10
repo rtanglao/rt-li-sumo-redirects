@@ -1,5 +1,15 @@
 # rt-li-sumo-redirects
 Roland's fun redirects for support.mozilla.org on lithium
+## 09April2017
+### 09April2017 - script to get other language URLs
+* 1\. wrote script to login and get other languages from English language URLs
+```bash 
+# syntax: ./get-other-language-urls.rb <english-language-kb-article-url>
+cd /Users/rtanglao/Dropbox/GIT/rt-li-sumo-redirects/OTHER-LANGUAGE
+./get-other-language-urls.rb \
+https://support.mozilla.org/t5/Manage-preferences-and-add-ons/How-to-change-your-default-browser-in-Windows-10/ta-p/35222 \
+>manage-prefs-addons-35222
+```
 ## 08April2017
 ### 08April2017 - test last 797 redirects
 * 1\. test hash mismatches - result: [all 98 japanese URLs PASS](https://github.com/rtanglao/rt-li-sumo-redirects/blob/master/PASS-08april2017-stdout-hash-issues.md), [all 230 non japanese fail](https://github.com/rtanglao/rt-li-sumo-redirects/blob/master/FAIL-08april2017-stdout-test-id-mismatches.md)
