@@ -1,5 +1,16 @@
 # rt-li-sumo-redirects
 Roland's fun redirects for support.mozilla.org on lithium
+## 10April2017
+### 10 April 2017 -- fresh 2 column spreadsheet 2
+* 1\. create CSV file
+```bash
+cat 08april2017-stdout-test-id-mismatches.md | cut -d ',' -f4 \
+> 10April2017-id-mismatch-failures-markdown-link-syntax.txt
+ggrep -oP 'https[^\]]+' 10April2017-id-mismatch-failures-markdown-link-syntax.txt \
+>10April2017-id-mismatch-links-twice.txt
+awk 'NR % 2 == 1' 10April2017-id-mismatch-links-twice.txt > 10April2017-id-mismatch-links-once.csv
+```
+* 2\. upload to Google Spreadsheeet: https://docs.google.com/spreadsheets/d/1oyIVIk5BZUvrHUPPu8LOHXYsfoZ3W_0GBF4PV8bVwIE/edit#gid=255038899
 ## 09April2017
 ### 09April2017 - script to get other language URLs
 * 1\. wrote script to login and get other languages from English language URLs
