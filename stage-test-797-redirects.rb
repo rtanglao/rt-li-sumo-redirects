@@ -22,7 +22,11 @@ Ccsv.foreach(ARGV[0]) do |columns|
   from_uri= URI(fromuri)
   touri = columns[1].chomp.gsub("support.mozilla.org", "support-stage.allizom.org") #column B
   guid_str = touri[touri.rindex("/") + 1, touri.length - 1]
+  anchor_pos = guid_str.rindex("#")
   to_uri = URI(touri)
+  anchor_pos = touri.rindex("#")
+  touri = touri[0..anchor_pos - 1] if !anchor_pos.nil?
+
   try_count = 0
   begin 
     Net::HTTP.start(from_uri.host, from_uri.port,
@@ -38,24 +42,18 @@ Ccsv.foreach(ARGV[0]) do |columns|
         $stderr.puts touri
         #response_uri = response['location']
         response_uri = URI::encode(response['location'])
-        #from_uri = URI.parse(response['location'])
-        # Net::HTTP.start(from_uri.host, from_uri.port,
-        #                 :use_ssl => from_uri.scheme == 'https') do |http|
-        #   request = Net::HTTP::Get.new from_uri.request_uri
-        #   response = http.request request # Net::HTTPResponse object
-        #   response_uri = response['location']
-        #   $stderr.printf("2nd response uri:%s\n", response['location'])
-        #   response_uri = "" if response_uri.nil?
-        #   # response_uri = "https://support.mozilla.org" + response_uri
-        #   response_uri = "https://support-stage.allizom.org" + response_uri 
-        # end
-      end        
-      if  response_uri == touri
+      end
+      actual_guid_str =
+        response_uri[
+          response_uri.rindex("/") + 1..response_uri.length - 1]
+      anchor_pos = actual_guid_str.rindex("#")
+      actual_guid_str =
+        actual_guid_str[0..anchor_pos - 1] if !anchor_pos.nil?
+      intermediate_redirect_uri = "https://support-stage.allizom.org/t5/-/-/ta-p/" + actual_guid_str
+      if  response_uri == touri || response_uri == intermediate_redirect_uri
         printf("* PASS,row:%d,code:%d,FROM:[%s](%s),EXPECTED:[%s](%s),ACTUAL:[%s](%s)\n",\
                row_number,response.code,fromuri,fromuri,touri,touri,response_uri,response_uri)
       else
-        actual_guid_str = response_uri[response_uri.rindex("/") + 1,
-                                response_uri.length - 1]
         printf(
           "* **FAIL**,row:%d,code:%d,FROM:[%s](%s),EXPECTED:[%s](%s),ACTUAL:**[%s](%s)**,EXPECTEDid:%s, ACTUALid:**%s**\n",\
           row_number,response.code,fromuri,fromuri,touri,touri,response_uri,response_uri,
