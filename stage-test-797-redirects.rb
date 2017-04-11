@@ -23,7 +23,7 @@ Ccsv.foreach(ARGV[0]) do |columns|
   touri = columns[1].chomp.gsub("support.mozilla.org", "support-stage.allizom.org") #column B
   guid_str = touri[touri.rindex("/") + 1, touri.length - 1]
   anchor_pos = guid_str.rindex("#")
-  guid_str[0..anchor_pos - 1] if !anchor_pos.nil?
+  guid_str = guid_str[0..anchor_pos - 1] if !anchor_pos.nil?
   to_uri = URI(touri)
   anchor_pos = touri.rindex("#")
   touri = touri[0..anchor_pos - 1] if !anchor_pos.nil?
