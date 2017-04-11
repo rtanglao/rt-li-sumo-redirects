@@ -18,9 +18,9 @@ Ccsv.foreach(ARGV[0]) do |columns|
     header = false
     next
   end
-  fromuri = columns[0] # column A
+  fromuri = columns[0].chomp # column A
   from_uri= URI(fromuri)
-  touri = columns[1] #column B
+  touri = columns[1].chomp #column B
   guid_str = touri[touri.rindex("/") + 1, touri.length - 1]
   to_uri = URI(touri)
   try_count = 0
