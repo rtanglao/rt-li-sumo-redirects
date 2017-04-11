@@ -23,6 +23,7 @@ Ccsv.foreach(ARGV[0]) do |columns|
   touri = columns[1].chomp.gsub("support.mozilla.org", "support-stage.allizom.org") #column B
   guid_str = touri[touri.rindex("/") + 1, touri.length - 1]
   anchor_pos = guid_str.rindex("#")
+  guid_str[0..anchor_pos - 1] if !anchor_pos.nil?
   to_uri = URI(touri)
   anchor_pos = touri.rindex("#")
   touri = touri[0..anchor_pos - 1] if !anchor_pos.nil?
@@ -50,7 +51,8 @@ Ccsv.foreach(ARGV[0]) do |columns|
       actual_guid_str =
         actual_guid_str[0..anchor_pos - 1] if !anchor_pos.nil?
       intermediate_redirect_uri = "https://support-stage.allizom.org/t5/-/-/ta-p/" + actual_guid_str
-      if  response_uri == touri || response_uri == intermediate_redirect_uri
+      intermediate_to_uri = "https://support-stage.allizom.org/t5/-/-/ta-p/" + guid_str
+      if  response_uri == touri || intermediate_to_uri == intermediate_redirect_uri
         printf("* PASS,row:%d,code:%d,FROM:[%s](%s),EXPECTED:[%s](%s),ACTUAL:[%s](%s)\n",\
                row_number,response.code,fromuri,fromuri,touri,touri,response_uri,response_uri)
       else
