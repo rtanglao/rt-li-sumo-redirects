@@ -36,7 +36,8 @@ Ccsv.foreach(ARGV[0]) do |columns|
         $stderr.puts("in first 301")
         $stderr.puts response['location']
         $stderr.puts touri
-        response_uri = response['location']
+        #response_uri = response['location']
+        response_uri = URI::encode(response['location'])
         #from_uri = URI.parse(response['location'])
         # Net::HTTP.start(from_uri.host, from_uri.port,
         #                 :use_ssl => from_uri.scheme == 'https') do |http|
