@@ -2,14 +2,21 @@
 Roland's fun redirects for support.mozilla.org on lithium
 ## 12April2017
 ## 12April2017 Testing Spreadsheet 1 and 2 on production
-* 1\. fingers crossed :-)
+#### 12April2017 Spreadsheet 1
+* 1\. fingers crossed :-) for spreadsheet 1
 ```bash
 ./production-test-797-redirects.rb \
 11april2017-google-drive-download-of-10April2017-corrected-by-vesper-mismatchedlinks-spreadsheet1.csv \
 > stdout.12april2017-production-spreadsheet1.txt \
 2> stderr.12april2017-productionspreadsheet1
 ```
-
+* 2\. YAY! [7 failures](https://github.com/rtanglao/rt-li-sumo-redirects/blob/master/FAIL-stdout.12april2017-production-spreadsheet1.md) instead of [yesterday's 18](https://github.com/rtanglao/rt-li-sumo-redirects/blob/master/FAIL-STAGE-stdout.11april2017-spreadsheet1.md)
+```bash
+grep FAIL stdout.12april2017-production-spreadsheet1.txt | wc -l
+       7
+grep FAIL stdout.12april2017-production-spreadsheet1.txt > \
+FAIL-stdout.12april2017-production-spreadsheet1.md
+```
 ## 11April2017
 ### 11April2017 Testing iOS in product links - case 00138883 aka bug 1355701
 * 1\. [all 60 pass on stage](https://github.com/rtanglao/rt-li-sumo-redirects/blob/master/STAGE-stdout.11april2017-case-00138883-ios-inproduct-links.md), yay!
