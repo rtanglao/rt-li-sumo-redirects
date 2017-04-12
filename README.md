@@ -1,8 +1,18 @@
 # rt-li-sumo-redirects
 Roland's fun redirects for support.mozilla.org on lithium
+## 12April2017
+## 12April2017 Testing Spreadsheet 1 and 2 on production
+* 1\. fingers crossed :-)
+```bash
+./production-test-797-redirects.rb \
+11april2017-google-drive-download-of-10April2017-corrected-by-vesper-mismatchedlinks-spreadsheet1.csv \
+> stdout.12april2017-production-spreadsheet1.txt \
+2> stderr.12april2017-productionspreadsheet1
+```
+
 ## 11April2017
 ### 11April2017 Testing iOS in product links - case 00138883 aka bug 1355701
-* 1\. all 60 pass on stage, yay
+* 1\. [all 60 pass on stage](https://github.com/rtanglao/rt-li-sumo-redirects/blob/master/STAGE-stdout.11april2017-case-00138883-ios-inproduct-links.md), yay!
 ```bash
 ./stage-test-797-redirects.rb 11apri2017-case-00138883-ios\ inproduct\ links\ -\ iOS.csv  \
 >STAGE-stdout.11april2017-case-00138883-ios-inproduct-links.txt \
@@ -10,12 +20,12 @@ Roland's fun redirects for support.mozilla.org on lithium
 wc -l STAGE-stdout.11april2017-case-00138883-ios-inproduct-links.txt
 60
 grep PASS STAGE-stdout.11april2017-case-00138883-ios-inproduct-links.txt
-690
+60
 ```
 ### 11April2017 - testing spreadsheet 1 and spreadsheet 2
 * 1\. spreadsheet 1 testing, tl;dr [18 failures](https://github.com/rtanglao/rt-li-sumo-redirects/blob/master/FAIL-STAGE-stdout.11april2017-spreadsheet1.md):
 ```bash
-./production-test-797-redirects.rb \
+./stage-test-797-redirects.rb \
 11april2017-google-drive-download-of-10April2017-corrected-by-vesper-mismatchedlinks-spreadsheet1.csv \
 > stdout.11april2017-spreadsheet1.txt
 ```
