@@ -3,10 +3,16 @@ Roland's fun redirects for support.mozilla.org on lithium
 ## 11April2017
 ### 11April2017 - testing spreadsheet 1 and spreadsheet 2
 * 1\. spreadsheet 1 testing, tl;dr [18 failures](https://github.com/rtanglao/rt-li-sumo-redirects/blob/master/FAIL-STAGE-stdout.11april2017-spreadsheet1.md):
-```
+```bash
 ./production-test-797-redirects.rb \
 11april2017-google-drive-download-of-10April2017-corrected-by-vesper-mismatchedlinks-spreadsheet1.csv \
 > stdout.11april2017-spreadsheet1.txt
+```
+* 2\. spreadsheet 2; tl;dr [4 PASS](https://github.com/rtanglao/rt-li-sumo-redirects/blob/master/PASS-STAGE-stdout.11april2017-spreadsheet2.md), rest i .e. [465 fail](https://github.com/rtanglao/rt-li-sumo-redirects/blob/master/FAIL-STAGE-stdout.11april2017-spreadsheet2.md) ?!? Maybe Lithium didn't run spreadsheet2?
+```bash
+./stage-test-797-redirects.rb \
+11april2017-google-drive-download-of-sumo-correct-approx-600links-spreadsheet2.csv \
+> STAGE-stdout.11april2017-spreadsheet2.txt 2> STAGE-stderr.11april2017-spreadsheet2.txt
 ```
 ## 10April2017
 ### 10 April 2017 -- fresh 2 column spreadsheet 2
