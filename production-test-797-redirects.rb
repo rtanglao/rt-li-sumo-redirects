@@ -36,16 +36,17 @@ Ccsv.foreach(ARGV[0]) do |columns|
         $stderr.puts("in first 301")
         $stderr.puts response['location']
         $stderr.puts touri
-        from_uri = URI.parse(response['location'])
-        Net::HTTP.start(from_uri.host, from_uri.port,
-                        :use_ssl => from_uri.scheme == 'https') do |http|
-          request = Net::HTTP::Get.new from_uri.request_uri
-          response = http.request request # Net::HTTPResponse object
-          response_uri = response['location']
-          $stderr.printf("2nd response uri:%s\n", response['location'])
-          response_uri = "" if response_uri.nil?
-          response_uri = "https://support.mozilla.org" + response_uri 
-        end
+        response_uri = response['location']
+        # from_uri = URI.parse(response['location'])
+        # Net::HTTP.start(from_uri.host, from_uri.port,
+        #                 :use_ssl => from_uri.scheme == 'https') do |http|
+        #   request = Net::HTTP::Get.new from_uri.request_uri
+        #   response = http.request request # Net::HTTPResponse object
+        #   response_uri = response['location']
+        #   $stderr.printf("2nd response uri:%s\n", response['location'])
+        #   response_uri = "" if response_uri.nil?
+        #   response_uri = "https://support.mozilla.org" + response_uri 
+        # end
       end        
       if  response_uri == touri
         printf("* PASS,row:%d,code:%d,FROM:[%s](%s),EXPECTED:[%s](%s),ACTUAL:[%s](%s)\n",\
