@@ -2,7 +2,7 @@
 Roland's fun redirects for support.mozilla.org on lithium
 ## 12April2017
 ### 12April2017 Testing NPAPI redirects
-* 1\. [2 errors](https://github.com/rtanglao/rt-li-sumo-redirects/blob/master/PRODUCTION-12april2017-npapi-redirect-test.txt)
+* 1\. [2 errors](https://github.com/rtanglao/rt-li-sumo-redirects/blob/master/PRODUCTION-12april2017-npapi-redirect-test.txt) - Lithium is should redirect to 9577 instead of 38206 
 ```bash
 ./production-test-npapi-redirects.rb \
 NPAPI\ SUMO\ Article\ -\ URLs.csv \
