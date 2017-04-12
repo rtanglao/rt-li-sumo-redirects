@@ -2,7 +2,7 @@
 Roland's fun redirects for support.mozilla.org on lithium
 ## 11April2017
 ### 11April2017 Testing iOS in product links - case 00138883 aka bug 1355701
-* 1\. all 60 pass on stage, yay
+* 1\. [all 60 pass on stage](https://github.com/rtanglao/rt-li-sumo-redirects/blob/master/STAGE-stdout.11april2017-case-00138883-ios-inproduct-links.md), yay!
 ```bash
 ./stage-test-797-redirects.rb 11apri2017-case-00138883-ios\ inproduct\ links\ -\ iOS.csv  \
 >STAGE-stdout.11april2017-case-00138883-ios-inproduct-links.txt \
