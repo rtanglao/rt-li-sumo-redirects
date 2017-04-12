@@ -1,7 +1,23 @@
 # rt-li-sumo-redirects
 Roland's fun redirects for support.mozilla.org on lithium
 ## 12April2017
-## 12April2017 Testing Spreadsheet 1 and 2 on production
+### 12April2017 Testing NPAPI redirects
+* 1\. [2 errors](https://github.com/rtanglao/rt-li-sumo-redirects/blob/master/PRODUCTION-12april2017-npapi-redirect-test.txt)
+```bash
+./production-test-npapi-redirects.rb \
+NPAPI\ SUMO\ Article\ -\ URLs.csv \
+>PRODUCTION-12april2017-npapi-redirect-test.txt
+```
+```bash
+grep FAIL PRODUCTION-12april2017-npapi-redirect-test.txt 
+FAIL,301,https://support.mozilla.org/kb/npapi-plugins-ja,\
+https://support.mozilla.org/t5/-/-/ta-p/38206,\
+EXPECTED:https://support.mozilla.org/t5/Manage-preferences-and-add-ons/Java-%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3%E5%88%A9%E7%94%A8%E3%82%AC%E3%82%A4%E3%83%89/ta-p/9577
+FAIL,301,https://support.mozilla.org/kb/npapi-plugins-ja-mac,\
+https://support.mozilla.org/t5/-/-/ta-p/38206,\
+EXPECTED:https://support.mozilla.org/t5/Manage-preferences-and-add-ons/Java-%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3%E5%88%A9%E7%94%A8%E3%82%AC%E3%82%A4%E3%83%89/ta-p/9577
+```
+### 12April2017 Testing Spreadsheet 1 and 2 on production
 #### 12April2017 Spreadsheet 1
 * 1\. fingers crossed :-) for spreadsheet 1
 ```bash
