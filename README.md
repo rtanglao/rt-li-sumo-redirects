@@ -2,14 +2,11 @@
 Roland's fun redirects for support.mozilla.org on lithium
 ## 11April2017
 ### 11April2017 - testing spreadsheet 1 and spreadsheet 2
-* 1\. spreadsheet 1 testing, tl;dr 168 failures:
+* 1\. spreadsheet 1 testing, tl;dr [18 failures](https://github.com/rtanglao/rt-li-sumo-redirects/blob/master/FAIL-STAGE-stdout.11april2017-spreadsheet1.md):
 ```
 ./production-test-797-redirects.rb \
 11april2017-google-drive-download-of-10April2017-corrected-by-vesper-mismatchedlinks-spreadsheet1.csv \
 > stdout.11april2017-spreadsheet1.txt
-grep FAIL stdout.11april2017-spreadsheet1.txt > FAIL-stdout.11april2017-spreadsheet1.txt
-wc -l FAIL-stdout.11april2017-spreadsheet1.txt 
-     168 FAIL-stdout.11april2017-spreadsheet1.txt
 ```
 ## 10April2017
 ### 10 April 2017 -- fresh 2 column spreadsheet 2
