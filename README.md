@@ -1,6 +1,17 @@
 # rt-li-sumo-redirects
 Roland's fun redirects for support.mozilla.org on lithium
 ## 11April2017
+### 11April2017 Testing iOS in product links - case 00138883 aka bug 1355701
+* 1\. all 60 pass on stage, yay
+```bash
+./stage-test-797-redirects.rb 11apri2017-case-00138883-ios\ inproduct\ links\ -\ iOS.csv  \
+>STAGE-stdout.11april2017-case-00138883-ios-inproduct-links.txt \
+2>STAGE-stderr.11april2017-case-00138883-ios-inproduct-links.txt &
+wc -l STAGE-stdout.11april2017-case-00138883-ios-inproduct-links.txt
+60
+grep PASS STAGE-stdout.11april2017-case-00138883-ios-inproduct-links.txt
+690
+```
 ### 11April2017 - testing spreadsheet 1 and spreadsheet 2
 * 1\. spreadsheet 1 testing, tl;dr [18 failures](https://github.com/rtanglao/rt-li-sumo-redirects/blob/master/FAIL-STAGE-stdout.11april2017-spreadsheet1.md):
 ```bash
