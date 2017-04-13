@@ -1,5 +1,19 @@
 # rt-li-sumo-redirects
 Roland's fun redirects for support.mozilla.org on lithium
+## 13April2017
+### 13April2017 Testing iOS on production
+* \1. [all 60 pass](https://github.com/rtanglao/rt-li-sumo-redirects/blob/master/PRODUCTION-stdout.13april2017-case-00138883-ios-inproduct-links.md)! yay!
+```bash
+./production-test-797-redirects.rb 11apri2017-case-00138883-ios\ inproduct\ links\ -\ iOS.csv >PRODUCTION-stdout.13april2017-case-00138883-ios-inproduct-links.md
+```
+```bash
+wc -l PRODUCTION-stdout.13april2017-case-00138883-ios-inproduct-links.md
+      60 PRODUCTION-stdout.13april2017-case-00138883-ios-inproduct-links.md
+```
+```bash
+grep PASS PRODUCTION-stdout.13april2017-case-00138883-ios-inproduct-links.md | wc -l
+      60
+```
 ## 12April2017
 ### 12April2017 Testing NPAPI redirects
 * 1\. [2 errors](https://github.com/rtanglao/rt-li-sumo-redirects/blob/master/PRODUCTION-12april2017-npapi-redirect-test.txt) - Lithium is should redirect to 9577 instead of 38206 
