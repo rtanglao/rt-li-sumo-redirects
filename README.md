@@ -2,6 +2,7 @@
 Roland's fun redirects for support.mozilla.org on lithium
 ## 13April2017
 ## 13April2017 Testing NPAPI on production
+* 1\. [All 92 pass](https://github.com/rtanglao/rt-li-sumo-redirects/blob/master/13april2017-npapi-redirect-test.md)!
 ```bash
 ./production-test-npapi-redirects.rb NPAPI\ SUMO\ Article\ -\ URLs.csv \
 >13april2017-npapi-redirect-test.md
