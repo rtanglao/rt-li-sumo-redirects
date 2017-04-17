@@ -10,7 +10,7 @@ Roland's fun redirects for support.mozilla.org on lithium
 rt-li-sumo-redirects rtanglao$ grep FAIL stdout.17april2017-spreadsheet1.md  | wc -l
        7
 ```
-* 2\. spreadsheet 2; tl;dr [n PASS](), rest i .e. [n fail]()
+* 2\. spreadsheet 2; tl;dr [469 i.e. ALL PASS, YAY](https://github.com/rtanglao/rt-li-sumo-redirects/blob/master/STAGE-stdout.17april2017-spreadsheet2.md)
 ```bash
 ./stage-test-797-redirects.rb \
 11april2017-google-drive-download-of-sumo-correct-approx-600links-spreadsheet2.csv \
