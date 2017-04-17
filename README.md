@@ -1,5 +1,19 @@
 # rt-li-sumo-redirects
 Roland's fun redirects for support.mozilla.org on lithium
+## 17April2017
+### 17April2017 - testing spreadsheet 1 and spreadsheet 2 - ON STAGE
+* 1\. spreadsheet 1 testing, tl;dr [n failures]():
+```bash
+./stage-test-797-redirects.rb \
+11april2017-google-drive-download-of-10April2017-corrected-by-vesper-mismatchedlinks-spreadsheet1.csv \
+> stdout.17april2017-spreadsheet1.md
+```
+* 2\. spreadsheet 2; tl;dr [n PASS](), rest i .e. [n fail]()
+```bash
+./stage-test-797-redirects.rb \
+11april2017-google-drive-download-of-sumo-correct-approx-600links-spreadsheet2.csv \
+> STAGE-stdout.17april2017-spreadsheet2.txt 2> STAGE-stderr.17april2017-spreadsheet2.md
+```
 ## 13April2017
 ## 13April2017 Testing NPAPI on production
 * 1\. [All 92 pass](https://github.com/rtanglao/rt-li-sumo-redirects/blob/master/13april2017-npapi-redirect-test.md)!
