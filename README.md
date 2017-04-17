@@ -2,7 +2,7 @@
 Roland's fun redirects for support.mozilla.org on lithium
 ## 17April2017
 ### 17April2017 - testing spreadsheet 1 and spreadsheet 2 - ON STAGE
-* 1\. spreadsheet 1 testing, tl;dr [7 failures which is unchanged](https://github.com/rtanglao/rt-li-sumo-redirects/blob/master/FAIL-stdout.17april2017-spreadsheet1.md) from [11april2017](https://github.com/rtanglao/rt-li-sumo-redirects/blob/master/FAIL-stdout.12april2017-production-spreadsheet1.md):
+* 1\. spreadsheet 1 testing, tl;dr [8 failures which is unchanged](https://github.com/rtanglao/rt-li-sumo-redirects/blob/master/FAIL-stdout.17april2017-spreadsheet1.md) from [11april2017](https://github.com/rtanglao/rt-li-sumo-redirects/blob/master/FAIL-stdout.12april2017-production-spreadsheet1.md):
 ```bash
 ./stage-test-797-redirects.rb \
 11april2017-google-drive-download-of-10April2017-corrected-by-vesper-mismatchedlinks-spreadsheet1.csv \
