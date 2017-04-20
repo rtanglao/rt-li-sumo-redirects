@@ -20,11 +20,17 @@ Roland's fun redirects for support.mozilla.org on lithium
 >19April2017-stdout-lithium-redirects-one-file-spreadsheet1and2.csv \
 2>19April2017-stderr-lithium-redirects-one-file-spreadsheet1and2.txt
 ```
-* 3\. merge NPAPI and XP EOL into the one desktop file to rule them all
+* 3\. merge NPAPIinto the one desktop file to rule them all
 ```bash
 cut -d , -f 2,6 NPAPI\ SUMO\ Article\ -\ URLs.csv | tail -n +2 >npapi-redirects-noheader.csv
 cat 19April2017-stdout-lithium-redirects-one-file-spreadsheet1and2.csv \
 npapi-redirects-noheader.csv >19April2017-1-desktop-csv-file-to-rule-them.csv
+```
+* 4\. merge XP EOL into the one desktop file
+```bash
+cut -d , -f 5,7 XP\ EOL\ localized\ articles\ -\ URLs.csv | tail -n +2 > eol-redirects-no-header.csv
+cat 19April2017-1-desktop-csv-file-to-rule-them.csv \
+eol-redirects-no-header.csv >19April2017-1-desktop-csv-file-to-rule-them-xp-eol-npapi.csv
 ```
 ## 17April2017
 ### 17April2017 - testing spreadsheet 1 and spreadsheet 2 - ON STAGE
