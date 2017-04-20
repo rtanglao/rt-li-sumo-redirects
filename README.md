@@ -1,5 +1,8 @@
 # rt-li-sumo-redirects
 Roland's fun redirects for support.mozilla.org on lithium
+## 19April2017
+### 19 April2017 - Create 1 spreadsheet of redirects, bug 1357985
+[bug 1357985 [redirects] Create a single spreadsheet of all in-product URL redirects: desktop, FF iOS, Firefox Focus for Android, Firefox Focus for iOS, Firefox for Android](bugzil.la/1357985)
 ## 17April2017
 ### 17April2017 - testing spreadsheet 1 and spreadsheet 2 - ON STAGE
 * 1\. spreadsheet 1 testing, tl;dr [7 failures which is unchanged](https://github.com/rtanglao/rt-li-sumo-redirects/blob/master/FAIL-stdout.17april2017-spreadsheet1.md) from [11april2017](https://github.com/rtanglao/rt-li-sumo-redirects/blob/master/FAIL-stdout.12april2017-production-spreadsheet1.md):
