@@ -9,6 +9,7 @@ cut -d , -f 1,3 Firefox\ for\ iOS\ 7\ -\ What\'s\ New\ \ -\ Overview\ article.cs
 | tail -n +2 > firefox-ios7-whatsnew-redirects.csv
 cat 11apri2017-case-00138883-ios\ inproduct\ links\ -\ iOS.csv \
 firefox-ios7-whatsnew-redirects.csv > 19april2017-1-file-ffios-firefox-focus-ios-links.csv
+```
 #### 19April2017 - Focus for Android (not released)
 * 1\. merge 2 spreadsheets: default browser and overview article 
 ```bash
