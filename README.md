@@ -1,8 +1,15 @@
 # rt-li-sumo-redirects
 Roland's fun redirects for support.mozilla.org on lithium
 ## 19April2017
-### 19 April2017 - Create 1 spreadsheet of Lithium redirects, bug 1357985
+### 19April2017 - Create 1 spreadsheet of Lithium redirects, bug 1357985
 [bug 1357985 [redirects] Create a single spreadsheet of all in-product URL redirects: desktop, FF iOS, Firefox Focus for Android, Firefox Focus for iOS, Firefox for Android](bugzil.la/1357985)
+#### 19April2017 - Focus for Android (not released)
+* 1\. merge 2 spreadsheets: default browser and overview article 
+```bash
+tail -n +2 Focus\ for\ Android\ -\ Overview\ article.csv > focus-overview-no-header.csv
+cat Focus\ for\ Android\ -\ Default\ browser\ article.csv \
+focus-overview-no-header.csv > 19april2017-1-csv-file-for-android-focus.csv
+```
 #### 19April2017 desktop lithium redirects
 * 1\. merge spreadsheet 1 into the one desktop file to rule them all
 ```bash
