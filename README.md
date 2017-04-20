@@ -8,8 +8,16 @@ Roland's fun redirects for support.mozilla.org on lithium
 ./merge-2-column-with-9column-csv.rb \
 11april2017-google-drive-download-of-10April2017-corrected-by-vesper-mismatchedlinks-spreadsheet1.csv \
 03April2017-one-csv-file-to-rule-them-all.csv  \
->19April2017-stdout-lithium-redirects-one-file-spreadsheet1.csv 
+>19April2017-stdout-lithium-redirects-one-file-spreadsheet1.csv \
 2>19April2017-stderr-lithium-redirects-one-file-spreadsheet1.txt
+```
+* 2\. merge spreadsheet 2 into the one csv file to rule them all
+```bash
+./merge-2-column-with-2-column-csv.rb \
+11april2017-google-drive-download-of-sumo-correct-approx-600links-spreadsheet2.csv \
+19April2017-stdout-lithium-redirects-one-file-spreadsheet1.csv \
+>19April2017-stdout-lithium-redirects-one-file-spreadsheet1and2.csv \
+2>19April2017-stderr-lithium-redirects-one-file-spreadsheet1and2.txt
 ```
 ## 17April2017
 ### 17April2017 - testing spreadsheet 1 and spreadsheet 2 - ON STAGE
