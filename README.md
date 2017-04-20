@@ -3,6 +3,13 @@ Roland's fun redirects for support.mozilla.org on lithium
 ## 19April2017
 ### 19April2017 - Create 1 spreadsheet of Lithium redirects, bug 1357985
 [bug 1357985 [redirects] Create a single spreadsheet of all in-product URL redirects: desktop, FF iOS, Firefox Focus for Android, Firefox Focus for iOS, Firefox for Android](bugzil.la/1357985)
+#### 19April2017 - Focus for iOS and Firefox for iOS (the code changes for these redirects weren't released)
+```bash
+cut -d , -f 1,3 Firefox\ for\ iOS\ 7\ -\ What\'s\ New\ \ -\ Overview\ article.csv \
+| tail -n +2 > firefox-ios7-whatsnew-redirects.csv
+cat 11apri2017-case-00138883-ios\ inproduct\ links\ -\ iOS.csv \
+firefox-ios7-whatsnew-redirects.csv > 19april2017-1-file-ffios-firefox-focus-ios-links.csv
+```
 #### 19April2017 - Focus for Android (not released)
 * 1\. merge 2 spreadsheets: default browser and overview article 
 ```bash
